@@ -1,0 +1,15 @@
+div.scrollmenu {
+    margin-top: 8%;
+    width: 60%;
+    text-align: center;
+    margin-left: 19%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu img {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}

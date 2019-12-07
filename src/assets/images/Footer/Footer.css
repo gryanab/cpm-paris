@@ -1,0 +1,56 @@
+.wrapper-footer {
+    position: absolute;
+    top: 3550px;
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-template-columns: repeat(40, 1fr);
+    background-image: url('../../../assets/images/footer/Calque723.png');
+}
+
+.wrapper-footer>div {
+    padding: 1em;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+    box-shadow: 2px 0px 0px 0px rgb(226, 226, 226);
+    color: rgb(49, 49, 49);
+    font-family: 'Gill Sans';
+}
+
+.wrapper-footer>div>p {
+    padding-left: 7em;
+}
+
+#top1, #top2, #top3 {
+    padding-top: 1.3em;
+}
+
+.span {
+    margin-top: 0.7em;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-column: 1 / 11;
+}
+
+.logo>img {
+    grid-column: 9 / 15;
+    margin-top: 2em;
+    margin-left: 3em;
+}
+
+.equipe {
+    grid-column: 11 / 21;
+}
+
+.addresse {
+    grid-column: 21 / 31;
+}
+
+.contact {
+    grid-column: 31 / 41;
+}
