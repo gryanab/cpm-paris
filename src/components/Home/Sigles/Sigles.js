@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Layout from '../../../hoc/Layout/Layout';
-import './Sigle.css';
+import classes from './Sigle.module.css';
 
 const sigle = () => (
   <Layout>
-    <div className="sigles__div">
-      <div className="sigle_1">
-        <p className="title">EN TOUTE CONFIANCE...</p>
-        <p className="text">
+    <div className={classes.sigles__div}>
+      <div className={classes.sigle_1}>
+        <p className={classes.title}>EN TOUTE CONFIANCE...</p>
+        <p className={classes.text}>
           Véritable partenaire <br /> pour la communication <br /> et le
           développement des <br /> entreprises que nous accompagnons, <br />{' '}
           nous proposons des produits <br />
@@ -16,17 +16,18 @@ const sigle = () => (
           <br /> de la visibilité de l'entreprise.
         </p>
       </div>
-      <div className="sigle_2">
-        <p className="title">UN DOMAINE MAÎTRISÉ</p>
-        <p className="text">
+      <div className={classes.sigle_2}>
+        <p className={classes.title}>UN DOMAINE MAÎTRISÉ</p>
+        <p className={classes.text}>
           CPM s'est spécialisé dans <br /> les ouvrages techniques <br />{' '}
           professionnels <br /> tel que Référence <br /> Énergie, Contact CE...
         </p>
       </div>
-      <div className="sigle_3">
-        <p className="title">UNE ÉQUIPE </p>
-        <p className="title">À VOTRE ÉCOUTE... </p>
-        <p className="text">
+      <div className={classes.sigle_3}>
+        <p className={classes.title}>
+          UNE ÉQUIPE <br /> À VOTRE ÉCOUTE{' '}
+        </p>
+        <p className={classes.text}>
           En effet, nous possédons une grande <br /> expérience en matière de
           conception, <br />
           de réalisations et de diffusion <br /> d'ouvrages professionnels

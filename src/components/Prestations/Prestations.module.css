@@ -1,34 +1,96 @@
-.one {
+.white {
     position: absolute;
-    left: 604px;
-    top: 147px;
-    width: 394px;
-    height: 287px;
-    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+}
+
+.img_presta {
+    position: absolute;
+    width: 17%;
+    left: 40%;
+    top: 45%;
+}
+
+.pic {
+    width: 90%;
+}
+
+.one {
+    margin-left: 55%;
+    margin-top: 7%;
+    width: 590px;
+    height: 320px;
 }
 
 .two {
     position: absolute;
-    left: 351px;
-    top: 300px;
-    background-color: black;
-    width: 379px;
-    height: 304px;
+    left: 46%;
+    top: 18%;
+    width: 380px;
+    height: 270px;
+    opacity: 0.4;
+    background-color: rgb(110, 110, 110);
 }
 
 .three {
     position: absolute;
-    left: 920px;
-    top: 250px;
-    width: 520px;
-    height: 280px;
-    background-color: black;
+    right: 0%;
+    top: 45%;
+    width: 548px;
+    height: 230px;
+    opacity: 0.4;
+    background-color: rgb(110, 110, 110);
 }
 
-.agency {
+.presta {
     position: absolute;
-    left: 250px;
-    top: 100px;
-    width: 15%;
+    left: 11%;
+    top: 28%;
+    width: 25%;
+}
+
+.presta_title {
+    font-size: 25px;
+    font-family: "Avenir Next";
+    font-size: 1.3em;
+    margin-bottom: 10%;
+}
+
+.presta_text {
+    font-size: 13px;
+    font-family: "Gill Sans";
     font-size: 0.8em;
+}
+
+.petit_paragraphe {
+    position: absolute;
+    right: 3%;
+    top: 78%;
+    font-size: 0.8em;
+    width: 35%;
+    font-size: 13px;
+    font-family: "Gill Sans";
+}
+
+@media(min-width: 1920px) {
+    .one {
+        height: 400px;
+        width: 800px;
+    }
+    .two {
+        width: 500px;
+        height: 300px;
+    }
+    .three {
+        top: 40%;
+        width: 700px;
+        height: 320px;
+    }
+    .petit_paragraphe {
+        right: 1.5%;
+    }
 }

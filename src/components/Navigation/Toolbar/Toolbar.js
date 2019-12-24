@@ -1,41 +1,102 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Toolbar.css';
+import { NavLink } from 'react-router-dom';
+import classes from './Toolbar.module.css';
 
 import '../SideDrawer/DrawerToggleButton';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
 const toolbar = props => (
-  <header className="toolbar">
-    <nav className="toolbar__navigation">
-      <div className="toolbar__toggle-button">
+  <header className={classes.toolbar}>
+    <nav className={classes.toolbar__navigation}>
+      <div className={classes.toolbar__toggle_button}>
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
-      <div className="toolbar__logo">
+      <div className={classes.toolbar__logo}>
         <a href="/">
           <img src={cpmLogo} alt="CPM-PARIS" width="30%" />
         </a>
       </div>
-      <div className="spacer"></div>
-      <div className="toolbar_navigation-items">
+      <div className={classes.spacer}></div>
+      <div className={classes.toolbar_navigation_items}>
         <ul>
           <li>
-            <Link to="/">accueil</Link>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
+              to="/"
+            >
+              accueil
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
+              to="#our-agency"
+            >
+              agence
+            </NavLink>
           </li>
           <li>
-            <Link to="/">agence</Link>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
+              to="/"
+            >
+              nos prestations
+            </NavLink>
           </li>
           <li>
-            <Link to="/prestations">nos prestations</Link>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
+              to="/magazine"
+            >
+              références
+            </NavLink>
           </li>
           <li>
-            <Link to="/magazine">références</Link>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
+              to="/"
+            >
+              contact
+            </NavLink>
           </li>
           <li>
-            <Link to="/">contact</Link>
-          </li>
-          <li>
-            <Link to="/">mentions légales</Link>
+            <NavLink
+              exact
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
+              to="/"
+            >
+              mentions légales
+            </NavLink>
           </li>
         </ul>
       </div>

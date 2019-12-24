@@ -1,0 +1,139 @@
+.sigles__div {
+    text-align: center;
+    margin-top: 18.5%;
+}
+
+.sigle_1 {
+    background-image: url('../../../assets/images/sigles/image_1.png');
+    background-size: cover;
+    width: 348px;
+    height: 441px;
+    float: left;
+    margin-top: -5%;
+    margin-left: 14%;
+}
+
+.sigle_2 {
+    background-image: url('../../../assets/images/sigles/image_2.png');
+    background-size: cover;
+    width: 330px;
+    height: 441px;
+    margin-top: -10%;
+    float: left;
+}
+
+.sigle_3 {
+    background-image: url('../../../assets/images/sigles/image_3.png');
+    background-size: cover;
+    width: 356px;
+    height: 441px;
+    float: left;
+}
+
+.title {
+    font-size: 25px;
+    font-family: "Avenir Next";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix( 1.00007568228483, 0, 0, 1.00173290849125, 0, 0);
+    -webkit-transform: matrix( 1.00007568228483, 0, 0, 1.00173290849125, 0, 0);
+    -ms-transform: matrix( 1.00007568228483, 0, 0, 1.00173290849125, 0, 0);
+    margin-top: 35%;
+    margin-left: 20%;
+}
+
+.text {
+    font-size: 13px;
+    font-family: "Gill Sans";
+    color: rgb(232, 231, 231);
+    line-height: 1.5;
+    text-align: left;
+    -moz-transform: matrix( 0.91664481231079, 0, 0, 0.9211021069692, 0, 0);
+    -webkit-transform: matrix( 0.91664481231079, 0, 0, 0.9211021069692, 0, 0);
+    -ms-transform: matrix( 0.91664481231079, 0, 0, 0.9211021069692, 0, 0);
+    margin-left: 17%;
+    margin-top: 10%;
+}
+
+@media(min-width: 1920px) {
+    .sigle_1 {
+        margin-top: -10%;
+        margin-left: 24%;
+    }
+    .sigle_2 {
+        margin-top: -15%;
+    }
+    .sigle_3 {
+        margin-top: -7.1%;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .sigles__div {
+        margin-top: 25%;
+    }
+    .sigle_1, .sigle_2, .sigle_3 {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sigle_1, .sigle_2, .sigle_3 {
+        margin: 0 auto;
+        width: 97%;
+        float: none;
+        height: 200px;
+        margin-top: 3%;
+    }
+    .sigle_2 {
+        height: 150px;
+    }
+    .text {
+        font-size: 13px;
+        font-family: "Gill Sans";
+        color: rgb(232, 231, 231);
+        line-height: 1.5;
+        margin: 0 auto;
+        text-align: center;
+        -moz-transform: matrix( 0.91664481231079, 0, 0, 0.9211021069692, 0, 0);
+        -webkit-transform: matrix( 0.91664481231079, 0, 0, 0.9211021069692, 0, 0);
+        -ms-transform: matrix( 0.91664481231079, 0, 0, 0.9211021069692, 0, 0);
+    }
+    .text br {
+        display: none;
+    }
+    .title {
+        font-size: 25px;
+        font-family: "Avenir Next";
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: center;
+        padding-top: 6%;
+        margin: 5% auto;
+        -moz-transform: matrix( 1.00007568228483, 0, 0, 1.00173290849125, 0, 0);
+        -webkit-transform: matrix( 1.00007568228483, 0, 0, 1.00173290849125, 0, 0);
+        -ms-transform: matrix( 1.00007568228483, 0, 0, 1.00173290849125, 0, 0);
+    }
+    .title br {
+        display: none;
+    }
+}
+
+@media(max-width: 426px) {
+    .sigles__div {
+        margin-top: 35%;
+    }
+    .sigle_1, .sigle_2, .sigle_3 {
+        margin: 0 auto;
+        width: 90%;
+        float: none;
+        height: 200px;
+        margin-top: 3%;
+    }
+    .sigle_2 {
+        height: 150px;
+    }
+}

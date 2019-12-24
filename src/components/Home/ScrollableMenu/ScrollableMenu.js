@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../../../hoc/Layout/Layout';
-import './ScrollableMenu.css';
+import classes from './ScrollableMenu.module.css';
 import agriculture from '../../../assets/images/scrollableMenu/agriculture.png';
 import andiman from '../../../assets/images/scrollableMenu/andiman.png';
 import as from '../../../assets/images/scrollableMenu/as.png';
@@ -21,7 +21,7 @@ import vousfinancer from '../../../assets/images/scrollableMenu/vousfinancer.png
 
 const scrollableMenu = () => (
   <Layout>
-    <div class="scrollmenu">
+    <div className={classes.scrollmenu}>
       <img src={agriculture} alt="alphatex" width="20%" />
       <img src={andiman} alt="alphatex" width="20%" />
       <img src={as} alt="alphatex" width="20%" />

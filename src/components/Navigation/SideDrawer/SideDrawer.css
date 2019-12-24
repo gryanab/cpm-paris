@@ -29,13 +29,9 @@
 }
 
 .side-drawer a {
-    color: teal;
+    color: rgb(39, 39, 39);
     text-decoration: none;
     font-size: 1.2rem;
-}
-
-.side-drawer a:hover, .side-drawer a:active {
-    color: pink;
 }
 
 @media(min-width: 769px) {

@@ -38,19 +38,17 @@ class Home extends Component {
     }
     return (
       <Layout>
-        <div className={classes.Home}>
-          <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-          <SideDrawer show={this.state.sideDrawerOpen} />
-          {backDrop}
-          <Conseil />
-          <div className={classes.white}></div>
-          <Sigles />
-          <NotreAgence />
-          <Prestations />
-          <ScrollableMenu />
-          <Form />
-          <Footer />
-        </div>
+        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
+        <SideDrawer show={this.state.sideDrawerOpen} />
+        {backDrop}
+        <Conseil />
+        <div className={classes.white}></div>
+        <Sigles />
+        <NotreAgence />
+        <Prestations />
+        <ScrollableMenu />
+        <Form />
+        <Footer />
       </Layout>
     );
   }

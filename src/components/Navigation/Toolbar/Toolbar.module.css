@@ -1,0 +1,88 @@
+.toolbar {
+    width: 100%;
+    background-color: transparent;
+    height: 56px;
+}
+
+.toolbar__navigation {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 6rem 1rem 0;
+    padding-top: 4%;
+}
+
+.toolbar__logo {
+    margin-left: 10rem;
+}
+
+.toolbar__logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar_navigation_items {
+    width: 75%;
+}
+
+.toolbar_navigation_items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toolbar_navigation_items a {
+    text-decoration: none;
+    font-size: 13px;
+    font-family: "Avenir Next";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    -moz-transform: matrix( 0.9999860860456, 0, 0, 0.98969072164948, 0, 0);
+    -webkit-transform: matrix( 0.9999860860456, 0, 0, 0.98969072164948, 0, 0);
+    -ms-transform: matrix( 0.9999860860456, 0, 0, 0.98969072164948, 0, 0);
+}
+
+.is-active {
+    color: red;
+}
+
+@media(max-width: 768px) {
+    .toolbar__logo {
+        display: none;
+    }
+    .toolbar {
+        border-bottom: 1px solid black;
+        height: 70px;
+    }
+    .toolbar_navigation_items {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .toolbar__toggle_button {
+        display: none;
+    }
+    .toolbar_navigation_items {
+        width: 100%;
+    }
+    .toolbar__logo {
+        margin-left: 5rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .toolbar__toggle_button {
+        display: none;
+    }
+}

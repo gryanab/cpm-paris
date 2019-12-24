@@ -1,0 +1,33 @@
+.scrollmenu {
+    margin-top: 8%;
+    width: 60%;
+    text-align: center;
+    margin-left: 19%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.scrollmenu::-webkit-scrollbar {
+    display: none;
+}
+
+div.scrollmenu img {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .scrollmenu {
+        width: 95%;
+        margin: 5em auto;
+    }
+}
+
+@media(max-width: 768px) {
+    div.scrollmenu {
+        width: 95%;
+        margin: 2em auto;
+    }
+}

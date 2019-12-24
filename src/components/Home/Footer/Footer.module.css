@@ -1,0 +1,54 @@
+.wrapper_footer {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    background-image: url('../../../assets/images/Footer/Calque723.png');
+}
+
+.wrapper_footer>div {
+    padding: 1em;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 11px;
+    /* box-shadow: 2px 0px 0px 0px rgb(226, 226, 226); */
+    color: rgb(49, 49, 49);
+    font-family: 'Gill Sans';
+}
+
+.logo_image {
+    padding-left: 14em;
+    padding-top: 1em;
+}
+
+#top1, #top2, #top3 {
+    margin-top: 1.3em;
+}
+
+.span {
+    margin: 0;
+}
+
+.equipe {
+    grid-column: 11 / 21;
+}
+
+.addresse {
+    grid-column: 21 / 31;
+}
+
+.contact {
+    grid-column: 31 / 41;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    .logo_image {
+        padding-left: 10em;
+        padding-top: 1.5em;
+    }
+}
+
+@media(max-width: 426px) {
+    .wrapper_footer {
+        display: none;
+    }
+}

@@ -8,14 +8,15 @@ const form = () => (
     <div class="formulaire">
       <div id="contact">Contact</div>
       <div id="nos-bureaux">
-        <h2> NOS BUREAUX</h2>
-        <p class="parag-contact">Centre d'affaires Ports de Paris</p>
+        <h2 className="title"> NOS BUREAUX</h2>
+        <p class="parag-contact-1">Centre d'affaires Ports de Paris</p>
         <p class="parag-contact">CPM 440 Clos de la Courtine</p>
         <p class="parag-contact">93160 Noisy le Grand</p>
       </div>
+
       <div id="contactez-nous">
-        <h2> CONTACTEZ NOUS</h2>
-        <p class="parag-contact">01 82 37 09 70</p>
+        <h2 className="title"> CONTACTEZ NOUS</h2>
+        <p class="parag-contact-1">01 82 37 09 70</p>
         <p class="parag-contact">contact@cpmparis.fr</p>
       </div>
       <form
@@ -85,6 +86,18 @@ const form = () => (
           <input id="submit" type="submit" value="Envoyer" />
         </fieldset>
       </form>
+      <div id="contact_mobile">
+        <h2 className="horaires_title"> NOS BUREAUX</h2>
+        <p class="parag-horaires">Centre d'affaires Ports de Paris</p>
+        <p class="parag-horaires">CPM 440 Clos de la Courtine</p>
+        <p class="parag-horaires">93160 Noisy le Grand</p>
+        <h2 className="horaires_title"> CONTACTEZ NOUS</h2>
+        <p class="parag-horaires">01 82 37 09 70</p>
+        <p class="parag-horaires">contact@cpmparis.fr</p>
+        <h2 className="horaires_title"> L'équipe est à votre écoute </h2>
+        <p class="parag-horaires">du lundi au jeudi de 9h00 à 18h00</p>
+        <p class="parag-horaires">et le vendredi de 9h00 à 17h00</p>
+      </div>
     </div>
   </Layout>
 );
