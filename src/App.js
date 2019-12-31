@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { Component } from "react";
+import { Route, Switch } from "react-router-dom";
 
-import Layout from './hoc/Layout/Layout';
-import Home from './components/Home/Home';
-import RefInterne from './components/Prestations/RefInterne/RefInterne';
-import WebAgency from './components/Prestations/WebAgency/WebAgency';
-import DesignGraphique from './components/Prestations/DesignGraphique/DesignGraphique';
-import ConseilComm from './components/Prestations/ConseilComm/ConseilComm';
-import Magazine from './components/Magazine/Magazine';
-import Formation from './components/Prestations/Formation/Formation';
-import NotreAgence from './components/Home/NotreAgence/NotreAgence';
+import Layout from "./hoc/Layout/Layout";
+import Home from "./components/Home/Home";
+import RefInterne from "./components/Prestations/RefInterne/RefInterne";
+import WebAgency from "./components/Prestations/WebAgency/WebAgency";
+import DesignGraphique from "./components/Prestations/DesignGraphique/DesignGraphique";
+import ConseilComm from "./components/Prestations/ConseilComm/ConseilComm";
+import Magazine from "./components/Magazine/Magazine";
+import Formation from "./components/Prestations/Formation/Formation";
+import NotreAgence from "./components/Home/NotreAgence/NotreAgence";
 
 class App extends Component {
   render() {

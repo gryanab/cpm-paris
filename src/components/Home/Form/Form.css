@@ -1,259 +1,288 @@
 form {
-    margin-top: 10%;
+  margin-top: 10%;
+  background-color: rgb(39, 39, 39);
+  width: 100%;
+  border: none;
+  height: 700px;
+}
+
+#contact {
+  position: absolute;
+  top: 3150px;
+  z-index: 200;
+  width: 100%;
+  text-align: center;
+  color: rgb(210, 210, 210);
+  font-size: 25px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  font-family: "Avenir Next";
+}
+
+#fs-frm-inputs {
+  width: 30%;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  border: none;
+}
+
+#nos-bureaux {
+  position: absolute;
+  top: 3250px;
+  left: 15%;
+  z-index: 200;
+}
+
+#contactez-nous {
+  position: absolute;
+  top: 3440px;
+  left: 15%;
+  z-index: 200;
+}
+
+#contact_mobile {
+  display: none;
+}
+
+input,
+textarea {
+  color: white;
+  font-family: "Gill Sans";
+}
+
+.title {
+  font-family: "Avenir Next";
+  font-weight: 500;
+  color: rgb(210, 210, 210);
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.parag-contact {
+  font-family: "Gill Sans";
+  font-weight: lighter;
+  color: rgb(210, 210, 210);
+  font-size: 0.8em;
+  margin-bottom: 0.4em;
+}
+
+.parag-contact-1 {
+  font-family: "Gill Sans";
+  font-weight: lighter;
+  color: rgb(210, 210, 210);
+  font-size: 0.8em;
+  margin-bottom: 0.4em;
+  margin-top: 2em;
+}
+
+#submit {
+  position: relative;
+  left: 71%;
+  margin-top: 1em;
+  border: 1px solid rgb(210, 210, 210);
+  background-color: rgb(210, 210, 210);
+  width: 23%;
+  height: 25px;
+  color: rgb(39, 39, 39);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: rgb(210, 210, 210);
+  padding-left: 2em;
+}
+
+textarea::placeholder {
+  color: rgb(210, 210, 210);
+  padding-left: 2em;
+  padding-top: 1em;
+}
+
+#last-name {
+  width: 45%;
+  margin-right: 1em;
+  height: 28px;
+  background-color: rgb(39, 39, 39);
+  border: 1px solid rgb(210, 210, 210);
+}
+
+#first-name {
+  width: 45%;
+  height: 28px;
+  background-color: rgb(39, 39, 39);
+  border: 1px solid rgb(210, 210, 210);
+}
+
+#company,
+#email-address,
+#phone,
+#subject {
+  width: 93.5%;
+  margin-top: 1.3em;
+  height: 28px;
+  background-color: rgb(39, 39, 39);
+  border: 1px solid rgb(210, 210, 210);
+}
+
+#message {
+  width: 93%;
+  margin-top: 1.3em;
+  height: 150px;
+  background-color: rgb(39, 39, 39);
+  border: 1px solid rgb(210, 210, 210);
+}
+
+@media (min-width: 1920px) {
+  #contact {
+    top: 3525px;
+  }
+  #nos-bureaux {
+    top: 3630px;
+  }
+  #contactez-nous {
+    top: 3850px;
+  }
+  form {
+    margin-top: 5%;
     background-color: rgb(39, 39, 39);
     width: 100%;
     border: none;
     height: 700px;
+  }
 }
 
-#contact {
-    position: absolute;
-    top: 3020px;
-    z-index: 200;
-    width: 100%;
-    text-align: center;
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  #last-name {
+    margin-right: 0.8em;
+  }
+  #contact {
+    top: 2970px;
+    font-size: 2.5em;
+  }
+  #nos-bureaux {
+    top: 3120px;
+  }
+
+  #contactez-nous {
+    top: 3310px;
+  }
+  #submit {
+    left: 53%;
+    width: 40%;
+    height: 25px;
+  }
+  input::placeholder {
     color: rgb(210, 210, 210);
-    font-size: 25px;
-    font-weight: lighter;
-    letter-spacing: 0.1em;
-    font-family: 'Avenir Next';
-}
+    padding-left: 1em;
+  }
 
-#fs-frm-inputs {
-    width: 30%;
+  textarea::placeholder {
+    color: rgb(210, 210, 210);
+    padding-left: 1em;
+    /* padding-top: 1em; */
+  }
+  #fs-frm-inputs {
+    width: 40%;
     position: relative;
     top: 20%;
     left: 50%;
     border: none;
-}
-
-#nos-bureaux {
-    position: absolute;
-    top: 3130px;
-    left: 15%;
-    z-index: 200;
-}
-
-#contactez-nous {
-    position: absolute;
-    top: 3320px;
-    left: 15%;
-    z-index: 200;
-}
-
-#contact_mobile {
-    display: none;
-}
-
-input, textarea {
-    color: white;
-    font-family: 'Gill Sans';
-}
-
-.title {
-    font-family: 'Avenir Next';
-    font-weight: 500;
-    color: rgb(210, 210, 210);
-    font-size: 1.6em;
-    margin: 0;
-}
-
-.parag-contact {
-    font-family: 'Gilles Sans';
-    font-weight: lighter;
-    color: rgb(210, 210, 210);
-    font-size: 0.8em;
-    margin-bottom: 0.4em;
-}
-
-.parag-contact-1 {
-    font-family: 'Gilles Sans';
-    font-weight: lighter;
-    color: rgb(210, 210, 210);
-    font-size: 0.8em;
-    margin-bottom: 0.4em;
-    margin-top: 2em;
-}
-
-#submit {
-    position: relative;
-    left: 71%;
-    margin-top: 1em;
-    border: 1px solid rgb(210, 210, 210);
-    background-color: rgb(210, 210, 210);
-    width: 23%;
-    height: 25px;
-    color: rgb(39, 39, 39)
-}
-
-input:focus, textarea:focus {
-    outline: none;
-}
-
-input::placeholder {
-    color: rgb(210, 210, 210);
-    padding-top: 2em;
-    padding-bottom: 1em;
-    padding-left: 2em;
-}
-
-textarea::placeholder {
-    color: rgb(210, 210, 210);
-    padding-left: 2em;
-    padding-top: 1em;
-}
-
-#last-name {
-    width: 45%;
-    margin-right: 1em;
-    height: 28px;
-    background-color: rgb(39, 39, 39);
-    border: 1px solid rgb(210, 210, 210);
-}
-
-#first-name {
-    width: 45%;
-    height: 28px;
-    background-color: rgb(39, 39, 39);
-    border: 1px solid rgb(210, 210, 210);
-}
-
-#company, #email-address, #phone, #subject {
-    width: 93.5%;
-    margin-top: 1.3em;
-    height: 28px;
-    background-color: rgb(39, 39, 39);
-    border: 1px solid rgb(210, 210, 210);
-}
-
-#message {
-    width: 93%;
-    margin-top: 1.3em;
-    height: 150px;
-    background-color: rgb(39, 39, 39);
-    border: 1px solid rgb(210, 210, 210);
-}
-
-@media(min-width: 1920px) {
-    #contact {
-        top: 3525px;
-    }
-    #nos-bureaux {
-        top: 3630px;
-    }
-    #contactez-nous {
-        top: 3850px;
-    }
-}
-
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
-    #nos-bureaux {
-        top: 3630px;
-    }
-    #contactez-nous {
-        top: 3820px;
-    }
-    #last-name {
-        margin-right: 0.8em;
-    }
-    #contact {
-        top: 3500px;
-        font-size: 2.5em;
-    }
-    #submit {
-        left: 53%;
-        width: 40%;
-        height: 25px;
-    }
+  }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 426px) {
-    form {
-        margin-top: 1%;
-        background-color: rgb(39, 39, 39);
-        width: 100%;
-        border: none;
-        height: 650px;
-    }
-    #nos-bureaux {
-        left: 10%;
-        top: 3100px;
-    }
-    #contactez-nous {
-        left: 10%;
-        top: 2930px;
-    }
-    #last-name {
-        margin-right: 0.8em;
-    }
-    #fs-frm-inputs {
-        width: 50%;
-        position: relative;
-        top: 20%;
-        left: 45%;
-        border: none;
-    }
-    .title {
-        font-family: 'Avenir Next';
-        font-weight: 500;
-        color: rgb(210, 210, 210);
-        font-size: 1.3em;
-    }
-    #contact {
-        top: 2810px;
-        font-size: 2em;
-    }
-    #submit {
-        left: 53%;
-        width: 40%;
-        height: 25px;
-    }
+  form {
+    margin-top: 1%;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    border: none;
+    height: 650px;
+  }
+  #nos-bureaux {
+    left: 10%;
+    top: 3100px;
+  }
+  #contactez-nous {
+    left: 10%;
+    top: 2930px;
+  }
+  #last-name {
+    margin-right: 0.8em;
+  }
+  #fs-frm-inputs {
+    width: 50%;
+    position: relative;
+    top: 20%;
+    left: 45%;
+    border: none;
+  }
+  .title {
+    font-family: "Avenir Next";
+    font-weight: 500;
+    color: rgb(210, 210, 210);
+    font-size: 1.3em;
+  }
+  #contact {
+    top: 2810px;
+    font-size: 2em;
+  }
+  #submit {
+    left: 53%;
+    width: 40%;
+    height: 25px;
+  }
 }
 
-@media(max-width: 426px) {
-    form {
-        height: 650px;
-    }
-    #contact {
-        top: 2060px;
-    }
-    #last-name {
-        margin-right: 0.8em;
-    }
-    #fs-frm-inputs {
-        width: 90%;
-        margin: 0 auto;
-        position: relative;
-        left: 3%;
-    }
-    #nos-bureaux, #contactez-nous {
-        display: none
-    }
-    #contact_mobile {
-        display: flex;
-        flex-direction: column;
-        background-color: rgb(210, 210, 210);
-        padding-bottom: 2em;
-    }
-    .horaires_title {
-        margin: 0 auto;
-        width: 60%;
-        text-align: center;
-        font-family: 'Avenir Next';
-        font-weight: 500;
-        color: rgb(39, 39, 39);
-        font-size: 1.3em;
-        text-transform: uppercase;
-        margin-bottom: 2em;
-        margin-top: 2em;
-    }
-    .parag-horaires {
-        color: rgb(39, 39, 39);
-        margin: 0 auto;
-    }
-    #submit {
-        left: 53%;
-        width: 40%;
-        height: 25px;
-    }
+@media (max-width: 426px) {
+  form {
+    height: 650px;
+  }
+  #contact {
+    top: 2060px;
+  }
+  #last-name {
+    margin-right: 0.8em;
+  }
+  #fs-frm-inputs {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    left: 3%;
+  }
+  #nos-bureaux,
+  #contactez-nous {
+    display: none;
+  }
+  #contact_mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(210, 210, 210);
+    padding-bottom: 2em;
+  }
+  .horaires_title {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-family: "Avenir Next";
+    font-weight: 500;
+    color: rgb(39, 39, 39);
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+  .parag-horaires {
+    color: rgb(39, 39, 39);
+    margin: 0 auto;
+  }
+  #submit {
+    left: 53%;
+    width: 40%;
+    height: 25px;
+  }
 }

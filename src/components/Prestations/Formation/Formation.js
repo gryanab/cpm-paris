@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
-import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
-import BackDrop from '../../Navigation/BackDrop/BackDrop';
-import Footer from '../../Home/Footer/Footer';
-import Formation from '../../../assets/images/prestations/formation.png';
-import FormationPic from '../../../assets/images/prestations/formation_pic.jpg';
+import Toolbar from "../../Navigation/Toolbar/Toolbar";
+import SideDrawer from "../../Navigation/SideDrawer/SideDrawder";
+import BackDrop from "../../Navigation/BackDrop/BackDrop";
+import Footer from "../../Home/Footer/Footer";
+import Formation from "../../../assets/images/prestations/formation.png";
+import FormationPic from "../../../assets/images/prestations/formation_pic.jpg";
 
-import Layout from '../../../hoc/Layout/Layout';
+import Layout from "../../../hoc/Layout/Layout";
 
-import classes from '../Prestations.module.css';
-import FooterPresta from '../FooterPresta/FooterPresta';
+import classes from "../Prestations.module.css";
+import FooterPresta from "../FooterPresta/FooterPresta";
 
-class Prestations extends Component {
+class FormationComp extends Component {
   state = {
     sideDrawerOpen: false
   };
@@ -57,6 +57,9 @@ class Prestations extends Component {
           <div className={classes.one}>
             <img className={classes.pic} src={FormationPic} />
           </div>
+          <div className={classes.tablet}>
+            <img className={classes.ptablet} src={FormationPic} />
+          </div>
           <div className={classes.two}></div>
           <div className={classes.three}></div>
           <FooterPresta />
@@ -66,4 +69,4 @@ class Prestations extends Component {
   }
 }
 
-export default Prestations;
+export default FormationComp;

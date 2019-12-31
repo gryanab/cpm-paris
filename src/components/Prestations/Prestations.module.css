@@ -1,96 +1,182 @@
 .white {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
 }
 
 .img_presta {
-    position: absolute;
-    width: 17%;
-    left: 40%;
-    top: 45%;
+  position: absolute;
+  width: 17%;
+  left: 40%;
+  top: 45%;
 }
 
 .pic {
-    width: 90%;
+  width: 90%;
 }
 
 .one {
+  margin-left: 53%;
+  margin-top: 8%;
+  width: 40%;
+  height: 320px;
+}
+
+.tablet {
+  display: none;
+}
+
+.two {
+  position: absolute;
+  left: 46%;
+  top: 18%;
+  width: 380px;
+  height: 270px;
+  opacity: 0.4;
+  background-color: rgb(110, 110, 110);
+}
+
+.three {
+  position: absolute;
+  right: 0%;
+  top: 45%;
+  width: 548px;
+  height: 230px;
+  opacity: 0.4;
+  background-color: rgb(110, 110, 110);
+}
+
+.presta {
+  position: absolute;
+  left: 11%;
+  top: 28%;
+  width: 25%;
+}
+
+.presta_title {
+  font-size: 25px;
+  font-family: "Avenir Next";
+  font-size: 1.3em;
+  margin-bottom: 10%;
+}
+
+.presta_text {
+  font-size: 13px;
+  font-family: "Gill Sans";
+  font-size: 0.8em;
+}
+
+.petit_paragraphe {
+  position: absolute;
+  right: 3%;
+  top: 78%;
+  font-size: 0.8em;
+  width: 35%;
+  font-size: 13px;
+  font-family: "Gill Sans";
+}
+
+@media (min-width: 1920px) {
+  .one {
+    height: 400px;
+    width: 800px;
+  }
+  .two {
+    width: 500px;
+    height: 300px;
+  }
+  .three {
+    top: 40%;
+    width: 700px;
+    height: 320px;
+  }
+  .petit_paragraphe {
+    right: 1.5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .img_presta {
+    position: absolute;
+    width: 17%;
+    left: 40%;
+    top: 10%;
+  }
+
+  .ptablet {
+    width: 90%;
+  }
+
+  .one {
     margin-left: 55%;
     margin-top: 7%;
     width: 590px;
     height: 320px;
-}
-
-.two {
+    display: none;
+  }
+  .tablet {
+    display: flex;
     position: absolute;
-    left: 46%;
-    top: 18%;
-    width: 380px;
+    top: 260px;
+    left: 20%;
+    width: 550px;
+    height: 280px;
+    z-index: -1;
+  }
+
+  .two {
+    position: relative;
+    left: 20%;
+    top: 500px;
+    width: 500px;
     height: 270px;
-    opacity: 0.4;
-    background-color: rgb(110, 110, 110);
-}
+    z-index: -1;
+  }
 
-.three {
+  .three {
+    position: relative;
+    left: 14%;
+    top: 180px;
+    width: 590px;
+    height: 130px;
+    z-index: -1;
+  }
+
+  .presta {
     position: absolute;
-    right: 0%;
-    top: 45%;
-    width: 548px;
-    height: 230px;
-    opacity: 0.4;
-    background-color: rgb(110, 110, 110);
-}
+    left: 25%;
+    top: 580px;
+    width: 50%;
+    text-align: center;
+  }
 
-.presta {
-    position: absolute;
-    left: 11%;
-    top: 28%;
-    width: 25%;
-}
-
-.presta_title {
+  .presta_title {
     font-size: 25px;
     font-family: "Avenir Next";
     font-size: 1.3em;
     margin-bottom: 10%;
-}
+    color: white;
+    z-index: 4;
+  }
 
-.presta_text {
+  .presta_text {
     font-size: 13px;
     font-family: "Gill Sans";
     font-size: 0.8em;
-}
+  }
 
-.petit_paragraphe {
+  .petit_paragraphe {
     position: absolute;
-    right: 3%;
-    top: 78%;
+    right: 22%;
+    top: 760px;
     font-size: 0.8em;
-    width: 35%;
+    width: 55%;
+    text-align: center;
     font-size: 13px;
     font-family: "Gill Sans";
-}
-
-@media(min-width: 1920px) {
-    .one {
-        height: 400px;
-        width: 800px;
-    }
-    .two {
-        width: 500px;
-        height: 300px;
-    }
-    .three {
-        top: 40%;
-        width: 700px;
-        height: 320px;
-    }
-    .petit_paragraphe {
-        right: 1.5%;
-    }
+  }
 }

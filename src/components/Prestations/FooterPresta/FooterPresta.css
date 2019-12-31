@@ -1,50 +1,52 @@
 .wrapper-footer-presta {
-    display: grid;
-    grid-template-columns: repeat(40, 1fr);
-    background-image: url('../../../assets/images/Footer/Calque723.png');
-    position: absolute;
-    bottom: 0;
-    /* display: none; */
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  background-image: url("../../../assets/images/Footer/Calque723.png");
+  position: absolute;
+  bottom: 0;
+  /* display: none; */
 }
 
-.wrapper-footer-presta>div {
-    padding: 1em;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 11px;
-    /* box-shadow: 2px 0px 0px 0px rgb(226, 226, 226); */
-    color: rgb(49, 49, 49);
-    font-family: 'Gill Sans';
+.wrapper-footer-presta > div {
+  padding: 1em;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 11px;
+  /* box-shadow: 2px 0px 0px 0px rgb(226, 226, 226); */
+  color: rgb(49, 49, 49);
+  font-family: "Gill Sans";
 }
 
 .logo_img_presta {
-    padding-left: 14em;
-    padding-top: 1em;
+  padding-left: 14em;
+  padding-top: 1em;
 }
 
-#top1, #top2, #top3 {
-    margin-top: 1.3em;
+#top1,
+#top2,
+#top3 {
+  margin-top: 1.3em;
 }
 
 .span {
-    margin: 0;
+  margin: 0;
 }
 
 .equipe {
-    grid-column: 11 / 21;
+  grid-column: 11 / 21;
 }
 
 .addresse {
-    grid-column: 21 / 31;
+  grid-column: 21 / 31;
 }
 
 .contact {
-    grid-column: 31 / 41;
+  grid-column: 31 / 41;
 }
 
-@media(max-width: 426px) {
-    .wrapper-footer {
-        display: none;
-    }
+@media (max-width: 426px) {
+  .wrapper-footer {
+    display: none;
+  }
 }

@@ -1,17 +1,17 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './SideDrawer.css';
+import "./SideDrawer.css";
 
 const sideDrawer = props => {
-  let drawerClasses = ['side-drawer'];
+  let drawerClasses = ["side-drawer"];
 
   if (props.show) {
-    drawerClasses = ['side-drawer', 'open'];
+    drawerClasses = ["side-drawer", "open"];
   }
-  console.log(drawerClasses.join(' '));
+  console.log(drawerClasses.join(" "));
   return (
-    <nav className={drawerClasses.join(' ')}>
+    <nav className={drawerClasses.join(" ")}>
       <ul>
         <li>
           <Link to="/">Accueil</Link>
@@ -20,7 +20,7 @@ const sideDrawer = props => {
           <Link to="#our_agency">Agence</Link>
         </li>
         <li>
-          <Link to="/prestations">Nos prestations</Link>
+          <Link to="/">Nos prestations</Link>
         </li>
         <li>
           <Link to="/magazine">Références</Link>

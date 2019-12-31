@@ -1,10 +1,10 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import classes from './Toolbar.module.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import classes from "./Toolbar.module.css";
 
-import '../SideDrawer/DrawerToggleButton';
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
+import "../SideDrawer/DrawerToggleButton";
+import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
+import cpmLogo from "../../../assets/images/cpm-logo/cpm-logo.png";
 const toolbar = props => (
   <header className={classes.toolbar}>
     <nav className={classes.toolbar__navigation}>
@@ -22,11 +22,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none'
-              }}
+              // activeStyle={{
+              //   fontWeight: 'bold',
+              //   color: 'red',
+              //   textDecoration: 'none'
+              // }}
               to="/"
             >
               accueil
@@ -36,11 +36,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none'
-              }}
+              // activeStyle={{
+              //   fontWeight: 'bold',
+              //   color: 'red',
+              //   textDecoration: 'none'
+              // }}
               to="#our-agency"
             >
               agence
@@ -49,11 +49,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none'
-              }}
+              // activeStyle={{
+              //   fontWeight: 'bold',
+              //   color: 'red',
+              //   textDecoration: 'none'
+              // }}
               to="/"
             >
               nos prestations
@@ -62,11 +62,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none'
-              }}
+              // activeStyle={{
+              //   fontWeight: 'bold',
+              //   color: 'red',
+              //   textDecoration: 'none'
+              // }}
               to="/magazine"
             >
               références
@@ -75,11 +75,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none'
-              }}
+              // activeStyle={{
+              //   fontWeight: 'bold',
+              //   color: 'red',
+              //   textDecoration: 'none'
+              // }}
               to="/"
             >
               contact
@@ -88,11 +88,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none'
-              }}
+              // activeStyle={{
+              //   fontWeight: 'bold',
+              //   color: 'red',
+              //   textDecoration: 'none'
+              // }}
               to="/"
             >
               mentions légales

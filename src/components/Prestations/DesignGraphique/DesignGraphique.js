@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
-import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
-import BackDrop from '../../Navigation/BackDrop/BackDrop';
-import Footer from '../../Home/Footer/Footer';
-import DesignGraphique from '../../../assets/images/prestations/design-graphique.png';
-import DesignGraphiquePic from '../../../assets/images/prestations/design_graphique_pic.jpg';
+import Toolbar from "../../Navigation/Toolbar/Toolbar";
+import SideDrawer from "../../Navigation/SideDrawer/SideDrawder";
+import BackDrop from "../../Navigation/BackDrop/BackDrop";
+import Footer from "../../Home/Footer/Footer";
+import DesignGraphique from "../../../assets/images/prestations/design-graphique.png";
+import DesignGraphiquePic from "../../../assets/images/prestations/design_graphique_pic.jpg";
 
-import Layout from '../../../hoc/Layout/Layout';
+import Layout from "../../../hoc/Layout/Layout";
 
-import classes from '../Prestations.module.css';
-import FooterPresta from '../FooterPresta/FooterPresta';
+import classes from "../Prestations.module.css";
+import FooterPresta from "../FooterPresta/FooterPresta";
 
 class Prestations extends Component {
   state = {
@@ -53,6 +53,9 @@ class Prestations extends Component {
           <p className={classes.petit_paragraphe}></p>
           <div className={classes.one}>
             <img src={DesignGraphiquePic} className={classes.pic} />
+          </div>
+          <div className={classes.tablet}>
+            <img src={DesignGraphiquePic} className={classes.ptablet} />
           </div>
           <div className={classes.two}></div>
           <div className={classes.three}></div>

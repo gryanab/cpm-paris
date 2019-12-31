@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
-import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
-import BackDrop from '../../Navigation/BackDrop/BackDrop';
-import Footer from '../FooterPresta/FooterPresta';
-import WebAgency from '../../../assets/images/prestations/web-agency.png';
-import WebAgencyPic from '../../../assets/images/prestations/web_agency_pic.jpg';
+import Toolbar from "../../Navigation/Toolbar/Toolbar";
+import SideDrawer from "../../Navigation/SideDrawer/SideDrawder";
+import BackDrop from "../../Navigation/BackDrop/BackDrop";
+import Footer from "../FooterPresta/FooterPresta";
+import WebAgency from "../../../assets/images/prestations/web-agency.png";
+import WebAgencyPic from "../../../assets/images/prestations/web_agency_pic.jpg";
 
-import Layout from '../../../hoc/Layout/Layout';
+import Layout from "../../../hoc/Layout/Layout";
 
-import classes from '../Prestations.module.css';
+import classes from "../Prestations.module.css";
 
 class Prestations extends Component {
   state = {
@@ -57,6 +57,9 @@ class Prestations extends Component {
           </p>
           <div className={classes.one}>
             <img className={classes.pic} src={WebAgencyPic} />
+          </div>
+          <div className={classes.tablet}>
+            <img className={classes.ptablet} src={WebAgencyPic} />
           </div>
           <div className={classes.two}></div>
           <div className={classes.three}></div>
