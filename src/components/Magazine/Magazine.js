@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import $ from "jquery";
+import "./turn.js";
 
 import Toolbar from "../Navigation/Toolbar/Toolbar";
 import SideDrawer from "../Navigation/SideDrawer/SideDrawder";
@@ -48,6 +50,22 @@ import mag201915 from "../../assets/images/mag-2019/mag-2019-15.jpg";
 import classes from "./Magazine.module.css";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
+import Turn from "./Turn/Turn.js";
+
+const options = {
+  width: 800,
+  height: 600,
+  autoCenter: true,
+  display: "double",
+  acceleration: true,
+  elevation: 50,
+  gradients: !$.isTouch,
+  when: {
+    turned: function(e, page) {
+      console.log("Current view: ", $(this).turn("view"));
+    }
+  }
+};
 
 const pages2018 = [
   mag20181,
@@ -125,6 +143,13 @@ class Magazine extends Component {
             left: "20%"
           }}
         ></div>
+        {/* <Turn options={options} className="magazine">
+          {pages2018.map((page, index) => (
+            <div key={index} className="page">
+              <img src={page} alt="" />
+            </div>
+          ))}
+        </Turn> */}
         <FooterPresta />
       </Layout>
     );
