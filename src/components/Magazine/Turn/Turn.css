@@ -1,5 +1,6 @@
 .magazine {
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  margin-left: 3em;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -7,6 +8,34 @@
   -ms-user-select: none;
   user-select: none;
   transition: margin-left 0.5s;
+}
+.magazine_tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 1140px) and (min-width: 769px) {
+  .magazine {
+    display: none;
+  }
+  .magazine_tablet {
+    display: flex;
+    /* margin-left: 3em; */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: margin-left 0.5s;
+  }
+  .magazine_tablet .page {
+    height: 100%;
+  }
+
+  .magazine_tablet .page img {
+    max-width: 100%;
+    height: 100%;
+  }
 }
 
 .magazine .page {

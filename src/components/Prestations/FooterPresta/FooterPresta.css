@@ -49,4 +49,7 @@
   .wrapper-footer {
     display: none;
   }
+  .wrapper-footer-presta {
+    display: none;
+  }
 }
