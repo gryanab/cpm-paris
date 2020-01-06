@@ -1,10 +1,11 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import classes from "./Toolbar.module.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
+import classes from './Toolbar.module.css';
 
-import "../SideDrawer/DrawerToggleButton";
-import DrawerToggleButton from "../SideDrawer/DrawerToggleButton";
-import cpmLogo from "../../../assets/images/cpm-logo/cpm-logo.png";
+import '../SideDrawer/DrawerToggleButton';
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
 const toolbar = props => (
   <header className={classes.toolbar}>
     <nav className={classes.toolbar__navigation}>
@@ -22,11 +23,11 @@ const toolbar = props => (
           <li>
             <NavLink
               exact
-              // activeStyle={{
-              //   fontWeight: 'bold',
-              //   color: 'red',
-              //   textDecoration: 'none'
-              // }}
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
               to="/"
             >
               accueil
@@ -34,56 +35,32 @@ const toolbar = props => (
           </li>
 
           <li>
-            <NavLink
-              exact
-              // activeStyle={{
-              //   fontWeight: 'bold',
-              //   color: 'red',
-              //   textDecoration: 'none'
-              // }}
-              to="#our-agency"
-            >
+            <Link smooth={true} exact to="notreAgence">
               agence
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              exact
-              // activeStyle={{
-              //   fontWeight: 'bold',
-              //   color: 'red',
-              //   textDecoration: 'none'
-              // }}
-              to="/"
-            >
+            <Link smooth={true} exact to="nosPrestations">
               nos prestations
-            </NavLink>
+            </Link>
           </li>
           <li>
             <NavLink
+              activeStyle={{
+                fontWeight: 'bold',
+                color: 'red',
+                textDecoration: 'none'
+              }}
               exact
-              // activeStyle={{
-              //   fontWeight: 'bold',
-              //   color: 'red',
-              //   textDecoration: 'none'
-              // }}
               to="/magazine"
             >
               références
             </NavLink>
           </li>
           <li>
-            <NavLink
-              exact
-              // activeStyle={{
-              //   fontWeight: 'bold',
-              //   color: 'red',
-              //   textDecoration: 'none'
-              // }}
-              to="/"
-            >
+            <Link smooth={true} exact to="contactNav">
               contact
-            </NavLink>
+            </Link>
           </li>
           <li>
             <NavLink
@@ -93,7 +70,7 @@ const toolbar = props => (
               //   color: 'red',
               //   textDecoration: 'none'
               // }}
-              to="/"
+              to="/mentions-légales"
             >
               mentions légales
             </NavLink>

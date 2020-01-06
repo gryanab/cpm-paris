@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
 import cpmpLogo from "../../../assets/images/cpm-logo/cpm-logo.png";
 
 import "./SideDrawer.css";
@@ -18,16 +20,22 @@ const sideDrawer = props => {
           <Link to="/">Accueil</Link>
         </li>
         <li>
-          <Link to="#our_agency">Agence</Link>
+          <ScrollLink smooth={true} exact to="notreAgence">
+            Agence
+          </ScrollLink>
         </li>
         <li>
-          <Link to="/">Nos prestations</Link>
+          <ScrollLink smooth={true} exact to="nosPrestations">
+            Nos Prestations
+          </ScrollLink>
         </li>
         <li>
           <Link to="/magazine"> Références</Link>
         </li>
         <li>
-          <Link to="/">Contact</Link>
+          <ScrollLink smooth={true} exact to="contactNav">
+            Contact
+          </ScrollLink>
         </li>
         <li>
           <Link to="/">Mentions légales</Link>

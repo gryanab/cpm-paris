@@ -5,7 +5,7 @@ import "./Form.css";
 
 const form = () => (
   <Layout>
-    <div class="formulaire">
+    <div class="formulaire" id="contactNav">
       <div id="contact">Contact</div>
       <div id="nos-bureaux">
         <h2 className="title"> NOS BUREAUX</h2>

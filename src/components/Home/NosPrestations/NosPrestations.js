@@ -13,7 +13,9 @@ import { Col } from "react-bootstrap";
 
 const nosPrestations = () => (
   <Layout>
-    <h3 className={classes.nos_prestations}>Nos prestations</h3>
+    <h3 className={classes.nos_prestations} id="nosPrestations">
+      Nos prestations
+    </h3>
     <div className={classes.wrapper_prestations}>
       <div className={classes.one}>
         <Link to="/prestations/ref-interne" className={classes.prestas}>
