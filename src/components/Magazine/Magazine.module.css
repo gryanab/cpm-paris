@@ -15,8 +15,6 @@
   padding-left: 22em;
   padding-top: 5em;
   padding-bottom: 5em;
-  background-color: rgb(211, 211, 211);
-  box-shadow: 1px 1px 20px 20px rgba(47, 47, 47, 0.2);
 }
 
 .magazine_mobile_display {
@@ -25,6 +23,10 @@
 
 .magazine_on_the_right {
   margin-left: 5em;
+}
+
+.magazine_on_the_right:hover, .magazine_on_the_left:hover {
+  cursor: pointer;
 }
 
 .nav_magazine_mobile {

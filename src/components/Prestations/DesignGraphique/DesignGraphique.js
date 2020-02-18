@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Toolbar from "../../Navigation/Toolbar/Toolbar";
-import SideDrawer from "../../Navigation/SideDrawer/SideDrawder";
-import BackDrop from "../../Navigation/BackDrop/BackDrop";
-import Footer from "../../Home/Footer/Footer";
-import DesignGraphique from "../../../assets/images/prestations/design-graphique.png";
-import DesignGraphiquePic from "../../../assets/images/prestations/design_graphique_pic.jpg";
+import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
+import BackDrop from '../../Navigation/BackDrop/BackDrop';
+import Footer from '../../Home/Footer/Footer';
+import DesignGraphique from '../../../assets/images/prestations/design-graphique.png';
+import DesignGraphiquePic from '../../../assets/images/prestations/design_graphique_pic.jpg';
 
-import Layout from "../../../hoc/Layout/Layout";
+import Layout from '../../../hoc/Layout/Layout';
 
-import classes from "../Prestations.module.css";
-import FooterPresta from "../FooterPresta/FooterPresta";
+import classes from '../Prestations.module.css';
+import FooterPresta from '../FooterPresta/FooterPresta';
 
 class Prestations extends Component {
   state = {
@@ -42,11 +42,19 @@ class Prestations extends Component {
           <div className={classes.presta}>
             <h1 className={classes.presta_title}>DESIGN GRAPHIQUE</h1>
             <p className={classes.presta_text}>
-              Notre équipe de graphistes, recrutés dans les meilleurs écoles,
-              met tout son savoir faire en avant pour véhiculer un message clair
-              et direct. <br />
-              Vous concevoir une communication visuelle ciblée et efficace c'est
-              notre métier !
+              Le graphisme est omniprésent dans notre quotidien à travers le
+              marketing, la publicité, l’édition, la presse et la communication
+              d’entreprise. <br /> <p />
+              Création et élaboration de supports publicitaires personnalisés.
+              Nous créons des logotypes, cartes de visite, flyers, brochures,
+              plaquettes. Notre équipe de graphistes qualifiés met tout son
+              savoir-faire ainsi que sa créativité en avant, pour véhiculer un
+              message clair et direct. Cela permet de concevoir une
+              communication visuelle en adéquation avec votre entreprise et
+              votre image de marque. <br /> <p />
+              De plus, nos graphistes sont présents pour vous aiguiller dans vos
+              choix de communication si vous n’avez aucune idée concernant vos
+              types de supports à produire.
             </p>
           </div>
           <img className={classes.img_presta} src={DesignGraphique} />

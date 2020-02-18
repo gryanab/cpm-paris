@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../../../hoc/Layout/Layout';
 import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
 import classes from './Footer.module.css';
+import { NavLink } from 'react-router-dom';
 
 const footer = () => (
   <Layout>
@@ -40,6 +41,13 @@ const footer = () => (
           </p>
           <p className={classes.span}>01 82 37 09 70</p>{' '}
           <p className={classes.span}>contact@cpmparis.fr</p>{' '}
+        </p>
+      </div>
+      <div className={classes.mentionlégales}>
+        <p>
+          <NavLink exact to="/mentions-légales">
+            MENTIONS LÉGALES
+          </NavLink>
         </p>
       </div>
     </div>

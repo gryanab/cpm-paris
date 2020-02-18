@@ -80,6 +80,20 @@
   font-family: "Gill Sans";
 }
 
+.magazine_button_link {
+  text-decoration: none;
+  color: black;
+}
+
+.magazine_button {
+  margin-left: 45%;
+  margin-top: -15%;
+}
+
+.magazine_button_link:hover {
+  color: white;
+}
+
 @media (min-width: 1920px) {
   .one {
     height: 400px;
@@ -106,11 +120,9 @@
     left: 40%;
     top: 10%;
   }
-
   .ptablet {
     width: 90%;
   }
-
   .one {
     margin-left: 55%;
     margin-top: 7%;
@@ -127,7 +139,6 @@
     height: 280px;
     z-index: -1;
   }
-
   .two {
     position: relative;
     left: 20%;
@@ -136,7 +147,6 @@
     height: 270px;
     z-index: -1;
   }
-
   .three {
     position: relative;
     left: 14%;
@@ -145,7 +155,6 @@
     height: 130px;
     z-index: -1;
   }
-
   .presta {
     position: absolute;
     left: 25%;
@@ -153,7 +162,6 @@
     width: 50%;
     text-align: center;
   }
-
   .presta_title {
     font-size: 25px;
     font-family: "Avenir Next";
@@ -162,13 +170,11 @@
     color: white;
     z-index: 4;
   }
-
   .presta_text {
     font-size: 13px;
     font-family: "Gill Sans";
     font-size: 0.8em;
   }
-
   .petit_paragraphe {
     position: absolute;
     right: 22%;

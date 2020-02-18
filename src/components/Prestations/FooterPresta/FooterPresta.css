@@ -1,13 +1,13 @@
 .wrapper-footer-presta {
   display: grid;
-  grid-template-columns: repeat(40, 1fr);
+  grid-template-columns: repeat(50, 1fr);
   background-image: url("../../../assets/images/Footer/Calque723.png");
   position: absolute;
   bottom: 0;
   /* display: none; */
 }
 
-.wrapper-footer-presta > div {
+.wrapper-footer-presta>div {
   padding: 1em;
   padding: 0;
   width: 100%;
@@ -23,9 +23,7 @@
   padding-top: 1em;
 }
 
-#top1,
-#top2,
-#top3 {
+#top1, #top2, #top3 {
   margin-top: 1.3em;
 }
 
@@ -43,6 +41,19 @@
 
 .contact {
   grid-column: 31 / 41;
+}
+
+.mentionslégales {
+  grid-column: 41 / 50;
+}
+
+.mentionslégales>p {
+  padding-top: 2em;
+}
+
+.mentionslégales>p>a {
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 426px) {

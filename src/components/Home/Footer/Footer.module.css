@@ -1,10 +1,10 @@
 .wrapper_footer {
   display: grid;
-  grid-template-columns: repeat(40, 1fr);
+  grid-template-columns: repeat(50, 1fr);
   background-image: url("../../../assets/images/Footer/Calque723.png");
 }
 
-.wrapper_footer > div {
+.wrapper_footer>div {
   padding: 1em;
   padding: 0;
   width: 100%;
@@ -20,9 +20,7 @@
   padding-top: 1em;
 }
 
-#top1,
-#top2,
-#top3 {
+#top1, #top2, #top3 {
   margin-top: 1.3em;
 }
 
@@ -40,6 +38,19 @@
 
 .contact {
   grid-column: 31 / 41;
+}
+
+.mentionlégales {
+  grid-column: 41 / 50;
+}
+
+.mentionlégales>p {
+  padding-top: 2em;
+}
+
+.mentionlégales>p>a {
+  text-decoration: none;
+  color: black;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {

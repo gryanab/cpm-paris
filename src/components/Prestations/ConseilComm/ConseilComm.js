@@ -1,15 +1,15 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Toolbar from "../../Navigation/Toolbar/Toolbar";
-import SideDrawer from "../../Navigation/SideDrawer/SideDrawder";
-import BackDrop from "../../Navigation/BackDrop/BackDrop";
-import ConseilComm from "../../../assets/images/prestations/conseil-com.png";
-import ConseilCommPi from "../../../assets/images/prestations/communication_pic.jpg";
+import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
+import BackDrop from '../../Navigation/BackDrop/BackDrop';
+import ConseilComm from '../../../assets/images/prestations/conseil-com.png';
+import ConseilCommPi from '../../../assets/images/prestations/communication_pic.jpg';
 
-import Layout from "../../../hoc/Layout/Layout";
+import Layout from '../../../hoc/Layout/Layout';
 
-import classes from "../Prestations.module.css";
-import FooterPresta from "../FooterPresta/FooterPresta";
+import classes from '../Prestations.module.css';
+import FooterPresta from '../FooterPresta/FooterPresta';
 
 class Prestations extends Component {
   state = {
@@ -41,10 +41,13 @@ class Prestations extends Component {
           <div className={classes.presta}>
             <h1 className={classes.presta_title}>CONSEIL EN COMMUNICATION</h1>
             <p className={classes.presta_text}>
-              Notre métier premier est de conseriller tous les types de sociétés
+              Notre priorité absolue est de fournir des services de la plus
+              haute qualité. Nous pouvons ainsi aiguiller et conseiller au mieux
+              nos clients afin de pleinement les satisfaire. <br /> <p />
+              Notre métier premier est de conseiller tous les types de sociétés
               (artisans, indépendants, PMI-PME, industries...) dans la
               recherche, le développement et la fidélisation de leurs clients.
-              Nous mettons sur pieds les meilleures stratégies afind de
+              Nous mettons en place une stratégie adaptée à vos besoins afin de
               développer votre notoriété.
             </p>
           </div>

@@ -62,19 +62,6 @@ const toolbar = props => (
               contact
             </Link>
           </li>
-          <li>
-            <NavLink
-              exact
-              // activeStyle={{
-              //   fontWeight: 'bold',
-              //   color: 'red',
-              //   textDecoration: 'none'
-              // }}
-              to="/mentions-légales"
-            >
-              mentions légales
-            </NavLink>
-          </li>
         </ul>
       </div>
     </nav>

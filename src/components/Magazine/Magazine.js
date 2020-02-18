@@ -1,26 +1,19 @@
-import React, { useState } from "react";
-import $ from "jquery";
-import "./turn.js";
-
-import Toolbar from "../Navigation/Toolbar/Toolbar";
-import SideDrawer from "../Navigation/SideDrawer/SideDrawder";
-import BackDrop from "../Navigation/BackDrop/BackDrop";
-import FooterPresta from "../Prestations/FooterPresta/FooterPresta";
-import Layout from "../../hoc/Layout/Layout";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-
-import mag20181 from "../../assets/images/mag-2018/mag-2018-1.jpg";
-import mag20191 from "../../assets/images/mag-2019/mag-2019-1.jpg";
-
-import classes from "./Magazine.module.css";
-import { Image } from "react-bootstrap";
-import MagazineModal18 from "./Modal/MagazineModal18";
-import MagazineModal19 from "./Modal/MagazineModal19";
-import { Link } from "react-router-dom";
-import Turn from "./Turn/Turn";
-
+import React, { useState } from 'react';
+import './turn.js';
+import Toolbar from '../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../Navigation/SideDrawer/SideDrawder';
+import BackDrop from '../Navigation/BackDrop/BackDrop';
+import FooterPresta from '../Prestations/FooterPresta/FooterPresta';
+import Layout from '../../hoc/Layout/Layout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import mag20181 from '../../assets/images/mag-2018/mag-2018-1.jpg';
+import mag20191 from '../../assets/images/mag-2019/mag-2019-1.jpg';
+import classes from './Magazine.module.css';
+import { Image } from 'react-bootstrap';
+import MagazineModal18 from './Modal/MagazineModal18';
+import MagazineModal19 from './Modal/MagazineModal19';
+import { Link } from 'react-router-dom';
 export default function Magazine() {
   const [modalShow18, setModalShow18] = useState(false);
   const [modalShow19, setModalShow19] = useState(false);
@@ -28,17 +21,14 @@ export default function Magazine() {
   const state = {
     sideDrawerOpen: false
   };
-
   const drawerToggleClickHandler = () => {
     this.setState(prevState => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
-
   const backDropClickHandler = () => {
     this.setState({ sideDrawerOpen: false });
   };
-
   let backDrop;
   if (state.sideDrawerOpen) {
     backDrop = <BackDrop click={backDropClickHandler} />;
@@ -56,11 +46,9 @@ export default function Magazine() {
         </Link>
       </div>
       {backDrop}
-
       <p className={classes.magazine_mobile_display}>
         Retrouvez une représentation de nos magazines sur tablettes et desktop!
       </p>
-
       <div className={classes.magazine_display}>
         <Image
           className={classes.magazine_on_the_left}
@@ -77,7 +65,6 @@ export default function Magazine() {
           onClick={() => setModalShow19(true)}
         />
       </div>
-
       <MagazineModal18
         show={modalShow18}
         onHide={() => setModalShow18(false)}

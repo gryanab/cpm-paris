@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import Toolbar from "../../Navigation/Toolbar/Toolbar";
-import SideDrawer from "../../Navigation/SideDrawer/SideDrawder";
-import BackDrop from "../../Navigation/BackDrop/BackDrop";
-import Footer from "../../Home/Footer/Footer";
-import Formation from "../../../assets/images/prestations/formation.png";
-import FormationPic from "../../../assets/images/prestations/formation_pic.jpg";
+import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
+import BackDrop from '../../Navigation/BackDrop/BackDrop';
+import Footer from '../../Home/Footer/Footer';
+import Formation from '../../../assets/images/prestations/formation.png';
+import FormationPic from '../../../assets/images/prestations/formation_pic.jpg';
 
-import Layout from "../../../hoc/Layout/Layout";
+import Layout from '../../../hoc/Layout/Layout';
 
-import classes from "../Prestations.module.css";
-import FooterPresta from "../FooterPresta/FooterPresta";
+import classes from '../Prestations.module.css';
+import FooterPresta from '../FooterPresta/FooterPresta';
 
 class FormationComp extends Component {
   state = {
@@ -42,18 +42,14 @@ class FormationComp extends Component {
           <div className={classes.presta}>
             <h1 className={classes.presta_title}>FORMATION</h1>
             <p className={classes.presta_text}>
-              Fort de notre expérience de plus de 25 and dans le domaine des
-              mériers de la communication et des médias, nous mettons à votre
-              disposition nos compétences afin de vous accompagner et de vous
-              aiguiller dans votre projet professionnel.
+              Nous sommes fiers de l’efficacité de nos méthodes de formation,
+              mais nous nous efforçons de nous améliorer pour fournir toujours
+              de meilleurs résultats. Fort de notre expérience de plus de 25 ans
+              dans le domaine des métiers de la communication et des médias,
+              nous mettons à votre disposition nos compétences afin de vous
             </p>
           </div>
           <img className={classes.img_presta} src={Formation} />
-          <p className={classes.petit_paragraphe}>
-            Notre équipe de formateurs se tient à votre service pour vous aider
-            à développer vos compétences professionnels et relationnels. Alors
-            n'attendez plus et rejoignez nous.
-          </p>
           <div className={classes.one}>
             <img className={classes.pic} src={FormationPic} />
           </div>
