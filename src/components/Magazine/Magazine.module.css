@@ -15,6 +15,7 @@
   padding-left: 22em;
   padding-top: 5em;
   padding-bottom: 5em;
+  box-shadow: 1px 1px 20px 20px rgba(47, 47, 47, 0.2);
 }
 
 .magazine_mobile_display {

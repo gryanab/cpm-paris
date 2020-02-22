@@ -52,7 +52,7 @@ const toolbar = props => (
                 textDecoration: 'none'
               }}
               exact
-              to="/magazine"
+              to="/prestations/ref-interne"
             >
               références
             </NavLink>
