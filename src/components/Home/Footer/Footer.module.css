@@ -33,30 +33,25 @@
 }
 
 .addresse {
-  grid-column: 21 / 31;
+  grid-column: 23 / 33;
 }
 
 .contact {
-  grid-column: 31 / 41;
+  grid-column: 36 / 46;
 }
 
-.mentionlégales {
-  grid-column: 41 / 50;
-}
-
-.mentionlégales>p {
-  padding-top: 2em;
-}
-
-.mentionlégales>p>a {
+.mentions_légales {
   text-decoration: none;
   color: black;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .wrapper-footer-presta {
+    grid-template-columns: repeat(40, 1fr);
+  }
   .logo_image {
-    padding-left: 9em;
-    padding-top: 1.5em;
+    padding-left: 12em;
+    padding-top: 2em;
   }
 }
 

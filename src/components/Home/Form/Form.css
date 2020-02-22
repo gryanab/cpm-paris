@@ -45,8 +45,7 @@ form {
   display: none;
 }
 
-input,
-textarea {
+input, textarea {
   color: white;
   font-family: "Gill Sans";
 }
@@ -87,8 +86,7 @@ textarea {
   color: rgb(39, 39, 39);
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
   outline: none;
 }
 
@@ -118,10 +116,7 @@ textarea::placeholder {
   border: 1px solid rgb(210, 210, 210);
 }
 
-#company,
-#email-address,
-#phone,
-#subject {
+#company, #email-address, #phone, #subject {
   width: 93.5%;
   margin-top: 1.3em;
   height: 28px;
@@ -161,15 +156,14 @@ textarea::placeholder {
     margin-right: 0.8em;
   }
   #contact {
-    top: 2970px;
+    top: 2780px;
     font-size: 2.5em;
   }
   #nos-bureaux {
-    top: 3120px;
+    top: 2910px;
   }
-
   #contactez-nous {
-    top: 3310px;
+    top: 3110px;
   }
   #submit {
     left: 53%;
@@ -180,7 +174,6 @@ textarea::placeholder {
     color: rgb(210, 210, 210);
     padding-left: 1em;
   }
-
   textarea::placeholder {
     color: rgb(210, 210, 210);
     padding-left: 1em;
@@ -254,8 +247,7 @@ textarea::placeholder {
     position: relative;
     left: 3%;
   }
-  #nos-bureaux,
-  #contactez-nous {
+  #nos-bureaux, #contactez-nous {
     display: none;
   }
   #contact_mobile {

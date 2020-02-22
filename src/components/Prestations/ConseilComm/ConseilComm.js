@@ -52,10 +52,6 @@ class Prestations extends Component {
             </p>
           </div>
           <img className={classes.img_presta} src={ConseilComm} />
-          <p className={classes.petit_paragraphe}>
-            Notre objectif, promouvoir votre identité et vos valeurs au travers
-            d'une communication cohérente et ciblée.
-          </p>
           <div className={classes.one}>
             <img className={classes.pic} src={ConseilCommPi} />
           </div>

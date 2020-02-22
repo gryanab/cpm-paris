@@ -73,9 +73,18 @@ class Prestations extends Component {
           </div>
           <div className={classes.tablet}>
             <img className={classes.ptablet} src={RefInternePic} />
+            <Button className={classes.magazine_button} variant="outline-dark">
+              <NavLink
+                className={classes.magazine_button_link}
+                exact
+                to="/magazine"
+              >
+                {' '}
+                DÉCOUVRIR NOS MAGAZINES{' '}
+              </NavLink>
+            </Button>
           </div>
-          {/* <div className={classes.two}></div>
-          <div className={classes.three}></div> */}
+          <div className={classes.two}></div>
           <Footer />
         </div>
       </Layout>

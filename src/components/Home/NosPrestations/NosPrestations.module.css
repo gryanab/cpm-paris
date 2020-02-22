@@ -106,6 +106,10 @@
   .prestas {
     margin-left: 0;
   }
+  .prestas>img {
+    width: 200px;
+    margin-left: 2em;
+  }
   .ref__interne {
     text-align: center;
     font-family: "Avenir Next";
@@ -116,6 +120,7 @@
   }
   .nos_prestations {
     margin-top: 55%;
+    margin-bottom: 1em;
     font-size: 50px;
   }
 }

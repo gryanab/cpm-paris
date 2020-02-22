@@ -43,17 +43,19 @@
   grid-column: 31 / 41;
 }
 
-.mentionslégales {
-  grid-column: 41 / 50;
-}
-
-.mentionslégales>p {
-  padding-top: 2em;
-}
-
-.mentionslégales>p>a {
+.mentions_légales {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .wrapper-footer-presta {
+    grid-template-columns: repeat(40, 1fr);
+  }
+  .logo_img_presta {
+    padding-left: 12em;
+    padding-top: 2em;
+  }
 }
 
 @media (max-width: 426px) {

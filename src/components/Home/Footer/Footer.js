@@ -12,7 +12,7 @@ const footer = () => (
         <img
           className={classes.logo_image}
           src={cpmLogo}
-          width="150%"
+          width="140%"
           alt="CPM-LOGO"
         />
       </div>
@@ -41,13 +41,15 @@ const footer = () => (
           </p>
           <p className={classes.span}>01 82 37 09 70</p>{' '}
           <p className={classes.span}>contact@cpmparis.fr</p>{' '}
-        </p>
-      </div>
-      <div className={classes.mentionlégales}>
-        <p>
-          <NavLink exact to="/mentions-légales">
-            MENTIONS LÉGALES
-          </NavLink>
+          <p>
+            <NavLink
+              className={classes.mentions_légales}
+              exact
+              to="/mentions-légales"
+            >
+              Mentions Légales
+            </NavLink>
+          </p>
         </p>
       </div>
     </div>
