@@ -42,6 +42,7 @@
   width: 50%;
   text-align: center;
   margin-left: 6em;
+  margin-bottom: 1em;
 }
 
 .wrapper_prestations>div>a {
@@ -114,6 +115,7 @@
     text-align: center;
     font-family: "Avenir Next";
     font-size: 1em;
+    margin-top: 1em;
   }
   .wrapper_prestations>div {
     box-shadow: none;
@@ -139,6 +141,7 @@
     text-align: center;
     font-family: "Avenir Next";
     font-size: 1em;
+    margin-top: 1em;
   }
   .wrapper_prestations>div {
     box-shadow: none;

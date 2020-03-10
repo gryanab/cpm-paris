@@ -5,6 +5,7 @@ import classes from './Toolbar.module.css';
 
 import '../SideDrawer/DrawerToggleButton';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
+import cpmLogoLong from '../../../assets/images/cpm-logo/LogoCPM_Long (1).png';
 import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
 const toolbar = props => (
   <header className={classes.toolbar}>
@@ -15,6 +16,11 @@ const toolbar = props => (
       <div className={classes.toolbar__logo}>
         <a href="/">
           <img src={cpmLogo} alt="CPM-PARIS" width="30%" />
+        </a>
+      </div>
+      <div className={classes.toolbar__logo__tablette}>
+        <a href="/">
+          <img src={cpmLogoLong} alt="CPM-PARIS" width="150%" />
         </a>
       </div>
       <div className={classes.spacer}></div>

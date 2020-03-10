@@ -10,6 +10,7 @@ import ConseilComm from './components/Prestations/ConseilComm/ConseilComm';
 import Magazine from './components/Magazine/Magazine';
 import Formation from './components/Prestations/Formation/Formation';
 import Legals from './components/legalsMentionPage/legalsMentionsPage';
+import Bordereau from './components/bordereauPage/bordereauPage';
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
       <Layout>
         <Switch>
           <Route path="/mentions-légales" component={Legals} />
+          <Route path="/bordereau-de-rétractation" component={Bordereau} />
           <Route path="/prestations/formation" component={Formation} />
           <Route path="/prestations/conseil-comm" component={ConseilComm} />
           <Route

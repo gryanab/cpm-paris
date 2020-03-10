@@ -3,22 +3,12 @@ import React, { Component } from 'react';
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../Navigation/BackDrop/BackDrop';
-import Footer from '../Prestations/FooterPresta/FooterPresta';
 
-import Retract1 from '../../assets/images/mentionsLégales/retract(1)-1.jpg';
-import Retract2 from '../../assets/images/mentionsLégales/retract(1)-2.jpg';
-
-import {
-  faAngleLeft,
-  faAngleRight,
-  faPhoneAlt,
-  faEnvelope
-} from '@fortawesome/free-solid-svg-icons';
+import data from './mentions_legals.json';
 
 import Layout from '../../hoc/Layout/Layout';
 
 import classes from './legalsMentionsPage.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Prestations extends Component {
   state = {
@@ -26,11 +16,9 @@ class Prestations extends Component {
     open: true
   };
 
-  toggleImage = () => {
-    this.setState(state => ({ open: !state.open }));
-  };
-
-  getImageName = () => (this.state.open ? 'retract1' : 'retract2');
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
 
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
@@ -42,11 +30,6 @@ class Prestations extends Component {
     this.setState({ sideDrawerOpen: false });
   };
   render() {
-    const imagesPath = {
-      retract1: Retract1,
-      retract2: Retract2
-    };
-    const imageName = this.getImageName();
     let backDrop;
     console.log(this.state.sideDrawerOpen);
     if (this.state.sideDrawerOpen) {
@@ -60,63 +43,55 @@ class Prestations extends Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <div className={classes.container}>
-          <div className={classes.siège_soc}>
-            <h1 className={classes.siège_social}>SIÈGE SOCIAL</h1>
-            <p className={classes.siège_social_text}>
-              Conseil Presse Marketing
-            </p>
-            <p className={classes.siège_social_text}>
-              Centre d'affaires Porte de Paris
-            </p>
-            <p className={classes.siège_social_text}>
-              440 Clos de la Courtine 93160 Noisy Le Grand
-            </p>
-          </div>
-          <div className={classes.contact}>
-            <h1 className={classes.contact_title}>CONTACT</h1>
-            <div>
-              <p className={classes.contact_text_l}>
-                {' '}
-                <FontAwesomeIcon icon={faPhoneAlt} />{' '}
-                <span style={{ color: 'white' }}>aa</span>01 82 37 09 70
-              </p>
-              <p className={classes.contact_text_r}>
-                <FontAwesomeIcon icon={faEnvelope} />
-                <span style={{ color: 'white' }}>aa</span>
-                contact@cpmparis.fr
-              </p>
-            </div>
-          </div>
-          <div className={classes.rep_légale}>
-            <h1 className={classes.légale_title}>REPRÉSENTANT LÉGAL</h1>
-            <p className={classes.légal_text}>
-              Inscription au registre du commerce: 82991852300020{' '}
-            </p>
-          </div>
-          <FontAwesomeIcon
-            onClick={this.toggleImage}
-            className={classes.left_arrow}
-            size="5x"
-            fixedWidth="false"
-            icon={faAngleLeft}
-          />
-          <div className={classes.mentions_légales}>
-            <div className={classes.display_inline}>
-              <img
-                style={{ width: '100%', height: '500px' }}
-                src={imagesPath[imageName]}
-              />
-            </div>
-            <FontAwesomeIcon
-              onClick={this.toggleImage}
-              size="5x"
-              fixedWidth="false"
-              className={classes.right_arrow}
-              icon={faAngleRight}
-            />
-          </div>
-          <Footer />
+          <h1 className={classes.title}>{data.title}</h1>
+          <p className={classes.paragraphe}> {data.lireAttentivement.l1} </p>
+          <p className={classes.paragraphe}> {data.lireAttentivement.l2} </p>
+          <p className={classes.paragraphe}> {data.lireAttentivement.l3} </p>
+          <p className={classes.paragraphe}> {data.lireAttentivement.l4} </p>
+
+          <h3 className={classes.little_title}>
+            {data.conseilPresseMarketingTitle}
+          </h3>
+          <p className={classes.paragraphe}>
+            Responsable éditorial : Mr le Directeur
+          </p>
+          <p className={classes.paragraphe}>Téléphone :0182370970 -</p>
+          <p className={classes.paragraphe}>Email : contact@cpmparis.fr</p>
+          <p className={classes.paragraphe}>Site Web : www.cpmparis.fr</p>
+          <p className={classes.paragraphe}>Hébergeur : 1&1 IONOS SARL</p>
+          <p className={classes.paragraphe}>
+            7 place de la Gare, 57201 SARREGUEMINES
+          </p>
+          <p className={classes.paragraphe}>Site Web : www.ionos.fr</p>
+          <p className={classes.paragraphe}>
+            {data.conseilPresseMarketingText}
+          </p>
+          <h3 className={classes.little_title}>{data.cookies}</h3>
+          <p className={classes.paragraphe}>{data.cookiesText}</p>
+          <h3 className={classes.little_title}>{data.liensHypertexts}</h3>
+          <p className={classes.paragraphe}>{data.liensHypertextsText}</p>
+          <p className={classes.paragraphe}>{data.liensHypertextsText2}</p>
+          <h3 className={classes.little_title}>{data.servicesFournis}</h3>
+          <p className={classes.paragraphe}>{data.servicesFournisText}</p>
+          <h3 className={classes.little_title}>{data.donnees}</h3>
+          <p className={classes.paragraphe}>{data.donnesText}</p>
+          <p className={classes.paragraphe}>{data.donneesText2}</p>
+          <p className={classes.paragraphe}>{data.donneesText3}</p>
+          <h3 className={classes.little_title}>
+            {data.proprieteIntellectuelle}
+          </h3>
+          <p className={classes.paragraphe}>
+            {data.proprieteIntellectuelleText}
+          </p>
+          <p className={classes.paragraphe}>
+            {data.proprieteIntellectuelleText2}
+          </p>
+          <h3 className={classes.little_title}>{data.CNIL}</h3>
+          <p className={classes.paragraphe}>{data.CNILText}</p>
+          <h3 className={classes.little_title}>{data.donneesPersonnelles}</h3>
+          <p className={classes.paragraphe}>{data.donneesPersonnellesText}</p>
         </div>
+        {/* <Footer className={classes.footer_legals} /> */}
       </Layout>
     );
   }

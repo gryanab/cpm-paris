@@ -65,14 +65,14 @@
   }
   .magazine_mobile_display {
     display: flex;
-    background-color: rgb(220, 220, 220);
+    /* background-color: rgb(220, 220, 220); */
     text-align: center;
     width: 90%;
     padding-top: 15%;
     padding-bottom: 15%;
     margin-left: 5%;
     margin-top: 40%;
-    box-shadow: 1px 1px 20px 20px rgba(47, 47, 47, 0.2);
+    box-shadow: 1px 1px 2px 2px rgba(47, 47, 47, 0.2);
     font-size: 30px;
   }
   .magazine_on_the_left {

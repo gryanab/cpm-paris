@@ -17,6 +17,8 @@ form {
   font-weight: lighter;
   letter-spacing: 0.1em;
   font-family: "Avenir Next";
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 #fs-frm-inputs {
@@ -236,7 +238,8 @@ textarea::placeholder {
     height: 650px;
   }
   #contact {
-    top: 2060px;
+    position: relative;
+    top: 100px;
   }
   #last-name {
     margin-right: 0.8em;
@@ -276,5 +279,18 @@ textarea::placeholder {
     left: 53%;
     width: 40%;
     height: 25px;
+  }
+  .mentions_légales_mobiles {
+    margin-top: 2em;
+    text-align: center;
+  }
+  .bordereau_mobiles {
+    margin-top: 2em;
+    text-align: center;
+    margin: 0;
+  }
+  .mentions_légales_mobiles>a, .bordereau_mobiles>a {
+    text-decoration: none;
+    color: black;
   }
 }

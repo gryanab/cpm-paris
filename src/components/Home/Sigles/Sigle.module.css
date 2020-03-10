@@ -72,11 +72,9 @@
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   .sigles__div {
-    margin-top: 60%;
+    margin-top: 40%;
   }
-  .sigle_1,
-  .sigle_2,
-  .sigle_3 {
+  .sigle_1, .sigle_2, .sigle_3 {
     width: 220px;
     height: 400px;
   }
@@ -92,9 +90,7 @@
 }
 
 @media (max-width: 768px) {
-  .sigle_1,
-  .sigle_2,
-  .sigle_3 {
+  .sigle_1, .sigle_2, .sigle_3 {
     margin: 0 auto;
     width: 97%;
     float: none;
@@ -140,9 +136,7 @@
   .sigles__div {
     margin-top: 35%;
   }
-  .sigle_1,
-  .sigle_2,
-  .sigle_3 {
+  .sigle_1, .sigle_2, .sigle_3 {
     margin: 0 auto;
     width: 90%;
     float: none;

@@ -1,19 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
-import cpmpLogo from "../../../assets/images/cpm-logo/cpm-logo.png";
+import cpmpLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
 
-import "./SideDrawer.css";
+import './SideDrawer.css';
 
 const sideDrawer = props => {
-  let drawerClasses = ["side-drawer"];
+  let drawerClasses = ['side-drawer'];
 
   if (props.show) {
-    drawerClasses = ["side-drawer", "open"];
+    drawerClasses = ['side-drawer', 'open'];
   }
   return (
-    <nav className={drawerClasses.join(" ")}>
+    <nav className={drawerClasses.join(' ')}>
       <img src={cpmpLogo} width="100px" className="cpm_logo_side_drawer" />
       <ul>
         <li className="top_li">
@@ -36,9 +36,6 @@ const sideDrawer = props => {
           <ScrollLink smooth={true} exact to="contactNav">
             Contact
           </ScrollLink>
-        </li>
-        <li>
-          <Link to="/">Mentions légales</Link>
         </li>
       </ul>
     </nav>

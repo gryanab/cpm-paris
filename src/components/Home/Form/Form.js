@@ -1,7 +1,8 @@
-import React from "react";
-import Layout from "../../../hoc/Layout/Layout";
+import React from 'react';
+import Layout from '../../../hoc/Layout/Layout';
 
-import "./Form.css";
+import './Form.css';
+import { NavLink } from 'react-router-dom';
 
 const form = () => (
   <Layout>
@@ -97,6 +98,16 @@ const form = () => (
         <h2 className="horaires_title"> L'équipe est à votre écoute </h2>
         <p class="parag-horaires">du lundi au jeudi de 9h00 à 18h00</p>
         <p class="parag-horaires">et le vendredi de 9h00 à 17h00</p>
+        <p class="mentions_légales_mobiles">
+          <NavLink exact to="/mentions-légales">
+            Mentions Légales
+          </NavLink>
+        </p>
+        <p class="bordereau_mobiles">
+          <NavLink exact to="/bordereau-de-rétractation">
+            Bordereau de rétractation
+          </NavLink>
+        </p>
       </div>
     </div>
   </Layout>

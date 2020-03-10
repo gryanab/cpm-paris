@@ -26,6 +26,10 @@
   margin-left: 10rem;
 }
 
+.toolbar__logo__tablette {
+  display: none;
+}
+
 .toolbar__logo a {
   color: white;
   text-decoration: none;
@@ -78,14 +82,18 @@
   .toolbar__toggle_button {
     display: flex;
   }
-  .toolbar__logo {
-    display: none;
-  }
   .toolbar {
     border-bottom: 1px solid black;
     height: 70px;
   }
   .toolbar_navigation_items {
     display: none;
+  }
+  .toolbar__logo {
+    display: none;
+  }
+  .toolbar__logo__tablette {
+    margin-left: 10rem;
+    display: block;
   }
 }
