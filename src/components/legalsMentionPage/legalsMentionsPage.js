@@ -9,11 +9,12 @@ import data from './mentions_legals.json';
 import Layout from '../../hoc/Layout/Layout';
 
 import classes from './legalsMentionsPage.module.css';
+import { NavLink } from 'react-router-dom';
 
 class Prestations extends Component {
   state = {
     sideDrawerOpen: false,
-    open: true
+    open: true,
   };
 
   componentDidMount() {
@@ -21,7 +22,7 @@ class Prestations extends Component {
   }
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -90,6 +91,15 @@ class Prestations extends Component {
           <p className={classes.paragraphe}>{data.CNILText}</p>
           <h3 className={classes.little_title}>{data.donneesPersonnelles}</h3>
           <p className={classes.paragraphe}>{data.donneesPersonnellesText}</p>
+          <p className={classes.little_title}>
+            <NavLink
+              className={classes.span_mentions_legales_paragraphe}
+              exact
+              to="/bordereau-de-rétractation"
+            >
+              Bordereau de rétractation
+            </NavLink>
+          </p>
         </div>
         {/* <Footer className={classes.footer_legals} /> */}
       </Layout>

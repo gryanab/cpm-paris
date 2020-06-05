@@ -7,53 +7,52 @@ form {
 }
 
 #contact {
-  position: absolute;
-  top: 3150px;
-  z-index: 200;
   width: 100%;
   text-align: center;
   color: rgb(210, 210, 210);
   font-size: 25px;
   font-weight: lighter;
   letter-spacing: 0.1em;
-  font-family: "Avenir Next";
-  margin-top: 1em;
-  margin-bottom: 1em;
+  font-family: 'Avenir Next';
+  padding-top: 2em;
 }
 
-#fs-frm-inputs {
-  width: 30%;
-  position: relative;
-  top: 20%;
-  left: 50%;
-  border: none;
+.bbb {
+  margin-top: 3em;
+  display: inline-flex;
+  justify-content: center;
 }
 
 #nos-bureaux {
-  position: absolute;
-  top: 3250px;
-  left: 15%;
-  z-index: 200;
+  margin-bottom: 3em;
 }
 
-#contactez-nous {
-  position: absolute;
-  top: 3440px;
-  left: 15%;
-  z-index: 200;
+.infos {
+  width: 30%;
+  margin: 0;
+  display: inline-block;
+  align-self: center;
+}
+
+#fs-frm-inputs {
+  display: inline-block;
+  margin: 0;
+  width: 30%;
+  border: none;
 }
 
 #contact_mobile {
   display: none;
 }
 
-input, textarea {
+input,
+textarea {
   color: white;
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans';
 }
 
 .title {
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: 500;
   color: rgb(210, 210, 210);
   font-size: 1.6em;
@@ -61,7 +60,7 @@ input, textarea {
 }
 
 .parag-contact {
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans';
   font-weight: lighter;
   color: rgb(210, 210, 210);
   font-size: 0.8em;
@@ -69,7 +68,7 @@ input, textarea {
 }
 
 .parag-contact-1 {
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans';
   font-weight: lighter;
   color: rgb(210, 210, 210);
   font-size: 0.8em;
@@ -88,7 +87,8 @@ input, textarea {
   color: rgb(39, 39, 39);
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -118,7 +118,10 @@ textarea::placeholder {
   border: 1px solid rgb(210, 210, 210);
 }
 
-#company, #email-address, #phone, #subject {
+#company,
+#email-address,
+#phone,
+#subject {
   width: 93.5%;
   margin-top: 1.3em;
   height: 28px;
@@ -134,38 +137,12 @@ textarea::placeholder {
   border: 1px solid rgb(210, 210, 210);
 }
 
-@media (min-width: 1920px) {
-  #contact {
-    top: 3525px;
-  }
-  #nos-bureaux {
-    top: 3630px;
-  }
-  #contactez-nous {
-    top: 3850px;
-  }
-  form {
-    margin-top: 5%;
-    background-color: rgb(39, 39, 39);
-    width: 100%;
-    border: none;
-    height: 700px;
-  }
-}
-
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   #last-name {
     margin-right: 0.8em;
   }
   #contact {
-    top: 2780px;
     font-size: 2.5em;
-  }
-  #nos-bureaux {
-    top: 2910px;
-  }
-  #contactez-nous {
-    top: 3110px;
   }
   #submit {
     left: 53%;
@@ -183,10 +160,6 @@ textarea::placeholder {
   }
   #fs-frm-inputs {
     width: 40%;
-    position: relative;
-    top: 20%;
-    left: 50%;
-    border: none;
   }
 }
 
@@ -198,26 +171,11 @@ textarea::placeholder {
     border: none;
     height: 650px;
   }
-  #nos-bureaux {
-    left: 10%;
-    top: 3100px;
-  }
-  #contactez-nous {
-    left: 10%;
-    top: 2930px;
-  }
   #last-name {
     margin-right: 0.8em;
   }
-  #fs-frm-inputs {
-    width: 50%;
-    position: relative;
-    top: 20%;
-    left: 45%;
-    border: none;
-  }
   .title {
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-weight: 500;
     color: rgb(210, 210, 210);
     font-size: 1.3em;
@@ -237,20 +195,14 @@ textarea::placeholder {
   form {
     height: 650px;
   }
-  #contact {
-    position: relative;
-    top: 100px;
-  }
   #last-name {
     margin-right: 0.8em;
   }
   #fs-frm-inputs {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    left: 3%;
+    width: 250%;
   }
-  #nos-bureaux, #contactez-nous {
+  #nos-bureaux,
+  #contactez-nous {
     display: none;
   }
   #contact_mobile {
@@ -263,7 +215,7 @@ textarea::placeholder {
     margin: 0 auto;
     width: 60%;
     text-align: center;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-weight: 500;
     color: rgb(39, 39, 39);
     font-size: 1.3em;
@@ -289,7 +241,8 @@ textarea::placeholder {
     text-align: center;
     margin: 0;
   }
-  .mentions_légales_mobiles>a, .bordereau_mobiles>a {
+  .mentions_légales_mobiles > a,
+  .bordereau_mobiles > a {
     text-decoration: none;
     color: black;
   }

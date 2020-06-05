@@ -4,7 +4,7 @@
 }
 
 .sigle_1 {
-  background-image: url("../../../assets/images/sigles/image_1.png");
+  background-image: url('../../../assets/images/sigles/image_1.png');
   background-size: cover;
   width: 348px;
   height: 441px;
@@ -14,7 +14,7 @@
 }
 
 .sigle_2 {
-  background-image: url("../../../assets/images/sigles/image_2.png");
+  background-image: url('../../../assets/images/sigles/image_2.png');
   background-size: cover;
   width: 330px;
   height: 441px;
@@ -23,7 +23,7 @@
 }
 
 .sigle_3 {
-  background-image: url("../../../assets/images/sigles/image_3.png");
+  background-image: url('../../../assets/images/sigles/image_3.png');
   background-size: cover;
   width: 356px;
   height: 441px;
@@ -32,7 +32,7 @@
 
 .title {
   font-size: 25px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.2;
@@ -46,7 +46,7 @@
 
 .text {
   font-size: 13px;
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans';
   color: rgb(232, 231, 231);
   line-height: 1.5;
   text-align: left;
@@ -74,7 +74,9 @@
   .sigles__div {
     margin-top: 40%;
   }
-  .sigle_1, .sigle_2, .sigle_3 {
+  .sigle_1,
+  .sigle_2,
+  .sigle_3 {
     width: 220px;
     height: 400px;
   }
@@ -90,7 +92,9 @@
 }
 
 @media (max-width: 768px) {
-  .sigle_1, .sigle_2, .sigle_3 {
+  .sigle_1,
+  .sigle_2,
+  .sigle_3 {
     margin: 0 auto;
     width: 97%;
     float: none;
@@ -102,7 +106,7 @@
   }
   .text {
     font-size: 13px;
-    font-family: "Gill Sans";
+    font-family: 'Gill Sans';
     color: rgb(232, 231, 231);
     line-height: 1.5;
     margin: 0 auto;
@@ -116,7 +120,7 @@
   }
   .title {
     font-size: 25px;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.2;
@@ -136,7 +140,9 @@
   .sigles__div {
     margin-top: 35%;
   }
-  .sigle_1, .sigle_2, .sigle_3 {
+  .sigle_1,
+  .sigle_2,
+  .sigle_3 {
     margin: 0 auto;
     width: 90%;
     float: none;

@@ -41,25 +41,15 @@ const footer = () => (
           </p>
           <p className={classes.span}>01 82 37 09 70</p>{' '}
           <p className={classes.span}>contact@cpmparis.fr</p>{' '}
-          <div className={classes.dropdown}>
-            <p>Mentions Légales</p>
-            <div className={classes.dropdown_content}>
-              <NavLink
-                className={classes.mentions_légales}
-                exact
-                to="/mentions-légales"
-              >
-                Mentions Légales
-              </NavLink>
-              <NavLink
-                className={classes.mentions_légales}
-                exact
-                to="/bordereau-de-rétractation"
-              >
-                Bordereau de rétractation
-              </NavLink>
-            </div>
-          </div>
+          <p className={classes.span}>
+            <NavLink
+              className={classes.span_mentions_legales}
+              exact
+              to="/mentions-légales"
+            >
+              Mentions Légales
+            </NavLink>
+          </p>
         </p>
       </div>
     </div>

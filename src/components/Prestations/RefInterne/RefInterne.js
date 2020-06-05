@@ -15,11 +15,11 @@ import { NavLink } from 'react-router-dom';
 
 class Prestations extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -84,7 +84,6 @@ class Prestations extends Component {
               </NavLink>
             </Button>
           </div>
-          <div className={classes.two}></div>
           <div className={classes.two}></div>
           <div className={classes.three}></div>
           <Footer />

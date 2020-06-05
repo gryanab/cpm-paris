@@ -2,47 +2,51 @@ import React from 'react';
 
 import Layout from '../../../hoc/Layout/Layout';
 import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
-import './FooterPresta.css';
+import classes from './FooterPresta.module.css';
 import { NavLink } from 'react-router-dom';
 
 const footerPresta = () => (
   <Layout>
-    <div className="wrapper-footer-presta">
+    <div className={classes.wrapper_footer_presta}>
       <div>
         <img
-          className="logo_img_presta"
+          className={classes.logo_img_presta}
           src={cpmLogo}
           width="140%"
           alt="CPM-LOGO"
         />
       </div>
-      <div className="equipe">
+      <div className={classes.equipe}>
         <p>
-          <p id="top1" className="span">
+          <p id={classes.top1} className={classes.span}>
             L'équipe CPM à votre écoute
           </p>{' '}
-          <p className="span">du lundi au jeudi de 9h00 à 18h00</p>{' '}
-          <p className="span">et le vendredi de 9h00 à 17h00</p>{' '}
+          <p className={classes.span}>du lundi au jeudi de 9h00 à 18h00</p>{' '}
+          <p className={classes.span}>et le vendredi de 9h00 à 17h00</p>{' '}
         </p>
       </div>
-      <div className="addresse">
+      <div className={classes.addresse}>
         <p>
-          <p id="top2" className="span">
+          <p id={classes.top2} className={classes.span}>
             Centre d'affaires Porte de Paris
           </p>{' '}
-          <p className="span">CPM 440 Clos de la Courtine</p>{' '}
-          <p className="span">93160 Noisy-Le-Grand</p>{' '}
+          <p className={classes.span}>CPM 440 Clos de la Courtine</p>{' '}
+          <p className={classes.span}>93160 Noisy-Le-Grand</p>{' '}
         </p>
       </div>
-      <div className="contact">
+      <div className={classes.contact}>
         <p>
-          <p id="top3" className="span">
+          <p id={classes.top3} className={classes.span}>
             CONTACTEZ-NOUS
           </p>
-          <p className="span">01 82 37 09 70</p>{' '}
-          <p className="span">contact@cpmparis.fr</p>{' '}
+          <p className={classes.span}>01 82 37 09 70</p>{' '}
+          <p className={classes.span}>contact@cpmparis.fr</p>{' '}
           <p>
-            <NavLink className="mentions_légales" exact to="/mentions-légales">
+            <NavLink
+              className={classes.mentions_légales}
+              exact
+              to="/mentions-légales"
+            >
               Mentions Légales
             </NavLink>
           </p>

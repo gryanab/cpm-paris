@@ -4,7 +4,6 @@ import Toolbar from '../Navigation/Toolbar/Toolbar';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../Navigation/BackDrop/BackDrop';
 import classes from './bordereau.module.css';
-import Footer from '../Home/Footer/Footer';
 
 import { DateTime } from 'luxon';
 
@@ -14,7 +13,7 @@ import Retract2 from '../../assets/images/mentionsLégales/retract(1)-2.jpg';
 class Bordereau extends Component {
   state = {
     sideDrawerOpen: false,
-    open: true
+    open: true,
   };
 
   componentDidMount() {
@@ -23,7 +22,7 @@ class Bordereau extends Component {
   }
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -45,7 +44,7 @@ class Bordereau extends Component {
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <h1 className={classes.title_bordereau}> Bordereau de rétractation </h1>
-        <div>
+        <div className={classes.images_align}>
           <img className={classes.retract1} src={Retract1} alt="Retract1" />
           <img className={classes.images} src={Retract2} alt="Retract2" />
         </div>

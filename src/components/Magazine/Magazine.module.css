@@ -9,13 +9,18 @@
 }
 
 .magazine_display {
+  margin: 0 auto;
   margin-top: 8em;
-  margin-left: 8em;
-  margin-right: 8em;
-  padding-left: 22em;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  vertical-align: center;
   padding-top: 5em;
   padding-bottom: 5em;
   box-shadow: 1px 1px 20px 20px rgba(47, 47, 47, 0.2);
+}
+.magazine_display_back {
+  text-align: center;
 }
 
 .magazine_mobile_display {
@@ -26,34 +31,13 @@
   margin-left: 5em;
 }
 
-.magazine_on_the_right:hover, .magazine_on_the_left:hover {
+.magazine_on_the_right:hover,
+.magazine_on_the_left:hover {
   cursor: pointer;
 }
 
 .nav_magazine_mobile {
   display: none;
-}
-
-@media (min-width: 1920px) {
-  .magazine_display {
-    padding-top: 10em;
-    padding-left: 38em;
-    margin-top: 10em;
-    box-shadow: 1px 1px 20px 20px rgba(47, 47, 47, 0.2);
-  }
-}
-
-@media only screen and (max-width: 1140px) and (min-width: 769px) {
-  .magazine_display {
-    padding-top: 10em;
-    padding-left: 12em;
-    margin-top: 3em;
-    box-shadow: 1px 1px 20px 20px rgba(47, 47, 47, 0.2);
-  }
-  .magazine_on_the_right {
-    margin-left: 0;
-    margin-top: 5em;
-  }
 }
 
 @media (max-width: 426px) {
@@ -70,9 +54,10 @@
     width: 90%;
     padding-top: 15%;
     padding-bottom: 15%;
-    margin-left: 5%;
-    margin-top: 40%;
-    box-shadow: 1px 1px 2px 2px rgba(47, 47, 47, 0.2);
+    padding-left: 15%;
+    padding-right: 15%;
+    margin: 0 auto;
+    /* box-shadow: 1px 1px 2px 2px rgba(47, 47, 47, 0.2); */
     font-size: 30px;
   }
   .magazine_on_the_left {

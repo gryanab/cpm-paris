@@ -1,13 +1,13 @@
-.wrapper-footer-presta {
+.wrapper_footer_presta {
   display: grid;
   grid-template-columns: repeat(50, 1fr);
-  background-image: url("../../../assets/images/Footer/Calque723.png");
+  background-image: url('../../../assets/images/Footer/Calque723.png');
   position: absolute;
   bottom: 0;
   /* display: none; */
 }
 
-.wrapper-footer-presta>div {
+.wrapper_footer_presta > div {
   padding: 1em;
   padding: 0;
   width: 100%;
@@ -15,7 +15,7 @@
   font-size: 11px;
   /* box-shadow: 2px 0px 0px 0px rgb(226, 226, 226); */
   color: rgb(49, 49, 49);
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans';
 }
 
 .logo_img_presta {
@@ -23,7 +23,9 @@
   padding-top: 1em;
 }
 
-#top1, #top2, #top3 {
+#top1,
+#top2,
+#top3 {
   margin-top: 1.3em;
 }
 
@@ -49,7 +51,7 @@
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-  .wrapper-footer-presta {
+  .wrapper_footer_presta {
     grid-template-columns: repeat(40, 1fr);
   }
   .logo_img_presta {
@@ -62,7 +64,7 @@
   .wrapper-footer {
     display: none;
   }
-  .wrapper-footer-presta {
+  .wrapper_footer_presta {
     display: none;
   }
 }
