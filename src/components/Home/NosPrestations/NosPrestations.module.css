@@ -15,7 +15,7 @@
   grid-template-rows: repeat(50, 1fr);
 }
 
-.wrapper_prestations>div {
+.wrapper_prestations > div {
   padding: 1em;
   text-align: center;
   padding: 0;
@@ -31,7 +31,7 @@
   width: 100%;
   text-align: center;
   font-size: 28px;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
   font-weight: lighter;
   letter-spacing: 0.05em;
   color: rgb(150, 150, 150);
@@ -45,7 +45,7 @@
   margin-bottom: 1em;
 }
 
-.wrapper_prestations>div>a {
+.wrapper_prestations > div > a {
   grid-row: 2 / 8;
 }
 
@@ -73,7 +73,7 @@
   text-align: center;
   grid-row: 8 / 10;
   font-size: 1.6em;
-  font-family: "Avenir Next";
+  font-family: 'Avenir Next';
 }
 
 .ref__interne__text {
@@ -81,7 +81,7 @@
   color: rgb(90, 90, 90);
   text-align: center;
   font-size: 1.2em;
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans';
 }
 
 @media (min-width: 1920px) {
@@ -89,7 +89,7 @@
     margin-top: 85%;
   }
   .prestas {
-    margin-left: 9em;
+    margin-left: 9.5em;
     width: 40%;
   }
 }
@@ -107,17 +107,17 @@
   .prestas {
     margin-left: 0;
   }
-  .prestas>img {
+  .prestas > img {
     width: 200px;
     margin-left: 2em;
   }
   .ref__interne {
     text-align: center;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-size: 1em;
     margin-top: 1em;
   }
-  .wrapper_prestations>div {
+  .wrapper_prestations > div {
     box-shadow: none;
   }
   .nos_prestations {
@@ -139,11 +139,11 @@
   }
   .ref__interne {
     text-align: center;
-    font-family: "Avenir Next";
+    font-family: 'Avenir Next';
     font-size: 1em;
     margin-top: 1em;
   }
-  .wrapper_prestations>div {
+  .wrapper_prestations > div {
     box-shadow: none;
   }
   .nos_prestations {

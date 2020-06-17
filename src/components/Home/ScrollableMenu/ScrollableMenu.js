@@ -77,7 +77,7 @@ const ref_list = [
   train_world,
   tsps,
   volumee,
-  vousfinancer
+  vousfinancer,
 ];
 
 class scrollableMenu extends Component {
@@ -90,7 +90,9 @@ class scrollableMenu extends Component {
 
     return (
       <Layout>
-        <div className={classes.scrollmenu}>{references}</div>
+        <div className={classes.slideshow}>
+          <div className={classes.scrollmenu}>{references}</div>
+        </div>
       </Layout>
     );
   }

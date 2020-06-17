@@ -1,33 +1,56 @@
+/* .slideshow {
+  transform: translate3d(0, 0, 0);
+} */
+
 .scrollmenu {
-    margin-top: 8%;
-    width: 60%;
-    text-align: center;
-    margin-left: 19%;
-    overflow: auto;
-    white-space: nowrap;
+  margin-top: 8%;
+  width: 60%;
+  text-align: center;
+  margin-left: 19%;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
 .scrollmenu::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 div.scrollmenu img {
-    display: inline-block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  animation: moveSlideshow 20s linear infinite;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-    .scrollmenu {
-        width: 95%;
-        margin: 5em auto;
-    }
+  .scrollmenu {
+    width: 95%;
+    margin: 5em auto;
+  }
 }
 
-@media(max-width: 768px) {
-    div.scrollmenu {
-        width: 95%;
-        margin: 2em auto;
-    }
+@media (max-width: 768px) {
+  div.scrollmenu {
+    width: 95%;
+    margin: 2em auto;
+  }
+}
+
+@keyframes moveSlideshow {
+  /* 0% {
+    transform: translateX(-10%);
+  }
+  25% {
+    transform: translateX(-30%);
+  }
+  50% {
+    transform: translateX(-70%);
+  }
+  75% {
+    transform: translateX(-90%);
+  } */
+  100% {
+    transform: translateX(-2000%);
+  }
 }
