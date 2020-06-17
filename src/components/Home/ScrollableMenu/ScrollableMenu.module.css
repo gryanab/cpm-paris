@@ -1,7 +1,3 @@
-/* .slideshow {
-  transform: translate3d(0, 0, 0);
-} */
-
 .scrollmenu {
   margin-top: 8%;
   width: 60%;
@@ -38,18 +34,6 @@ div.scrollmenu img {
 }
 
 @keyframes moveSlideshow {
-  /* 0% {
-    transform: translateX(-10%);
-  }
-  25% {
-    transform: translateX(-30%);
-  }
-  50% {
-    transform: translateX(-70%);
-  }
-  75% {
-    transform: translateX(-90%);
-  } */
   100% {
     transform: translateX(-2000%);
   }

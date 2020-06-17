@@ -12,7 +12,7 @@ const form = () => (
         id="fs-frm"
         name="department-contact-form"
         accept-charset="utf-8"
-        action="https://formspree.io/gryan.ab@gmail.com"
+        action="https://formspree.io/contact@cpmparis.fr"
         method="post"
       >
         <div id="contact">Contact</div>
