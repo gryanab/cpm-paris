@@ -30,7 +30,7 @@ const sigle = () => (
         <p className={classes.text}>
           En effet, nous possédons une grande <br /> expérience en matière de
           conception, <br />
-          de réalisations et de diffusion <br /> d'ouvrages professionnels
+          de réalisation et de diffusion <br /> d'ouvrages professionnels
           ciblés. <br /> Dans le but de garantir <br /> une prestation complète,{' '}
           <br /> notre équipe expérimentée se tient <br /> à votre disposition.
         </p>

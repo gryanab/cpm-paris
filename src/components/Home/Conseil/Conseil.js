@@ -8,7 +8,7 @@ const conseil = () => {
   let pro = {
     fontWeight: 'bold',
     color: 'rgb(106, 106, 106)',
-    marginBottom: '0'
+    marginBottom: '0',
   };
   return (
     <Layout>
@@ -29,7 +29,6 @@ const conseil = () => {
             classes.conseils_en_communication_par_des_professionnels_text
           }
         >
-          <p className={classes.plus_sign}>+</p>
           <p className={classes.text_conseil}>Conseil en </p>
           <p className={classes.text_conseil}>communications </p>
           <p className={classes.text_conseil}>par des </p>

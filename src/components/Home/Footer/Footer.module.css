@@ -18,11 +18,13 @@
 
 .logo_image {
   padding-left: 14em;
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
 #top1,
-#top2,
+#top2 {
+  margin-top: 1.9em;
+}
 #top3 {
   margin-top: 1.3em;
 }

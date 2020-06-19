@@ -85,7 +85,6 @@ class Prestations extends Component {
             </Button>
           </div>
           <div className={classes.two}></div>
-          <div className={classes.three}></div>
           <Footer />
         </div>
       </Layout>

@@ -49,6 +49,16 @@
   height: 230px;
   opacity: 0.4;
   background-color: rgb(110, 110, 110);
+}
+
+.threeRef {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  width: 548px;
+  height: 230px;
+  opacity: 0.4;
+  background-color: rgb(110, 110, 110);
   z-index: -1;
 }
 

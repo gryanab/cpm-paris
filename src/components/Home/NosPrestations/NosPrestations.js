@@ -25,9 +25,9 @@ const nosPrestations = () => (
           RÉFÉRENCEMENT <br /> INTERNE
         </p>
         <p className={classes.ref__interne__text}>
-          Camapgnes numériques <br /> professionnelles. Revues spécialisées{' '}
-          <br /> dans les domaines technqiues <br /> comportant plusieurs
-          catégories <br /> en fonxtion des secteurs d'activités <br />{' '}
+          Campagnes numériques <br /> professionnelles. Revues spécialisées{' '}
+          <br /> dans les domaines techniques <br /> comportant plusieurs
+          catégories <br /> en fonction des secteurs d'activités <br />{' '}
           génériques déterminés.
         </p>
       </div>
@@ -42,7 +42,7 @@ const nosPrestations = () => (
           Nous vous assistons de la conception <br /> à la gestion en passant
           par la réalisation <br /> de vos outils de communications internet,{' '}
           <br /> intranet. Notre agence web est capable <br />
-          de répondre à tous vos beosins et <br /> d'élaborer une véritable
+          de répondre à tous vos besoins et <br /> d'élaborer une véritable
           stratégie digitale.
         </p>
       </div>
