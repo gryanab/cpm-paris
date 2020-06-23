@@ -20,7 +20,7 @@ const form = () => (
           <div class="infos">
             <div id="nos-bureaux">
               <h2 className="title"> NOS BUREAUX</h2>
-              <p class="parag-contact-1">Centre d'affaires Ports de Paris</p>
+              <p class="parag-contact-1">Centre d'affaires Porte de Paris</p>
               <p class="parag-contact">CPM 440 Clos de la Courtine</p>
               <p class="parag-contact">93160 Noisy le Grand</p>
             </div>

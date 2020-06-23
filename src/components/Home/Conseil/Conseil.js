@@ -29,9 +29,9 @@ const conseil = () => {
             classes.conseils_en_communication_par_des_professionnels_text
           }
         >
-          <p className={classes.text_conseil}>Conseil en </p>
-          <p className={classes.text_conseil}>communications </p>
-          <p className={classes.text_conseil}>par des </p>
+          <p className={classes.text_conseil}>Notre métier, Conseil </p>
+          <p className={classes.text_conseil}> en communication </p>
+          <p className={classes.text_conseil}>pour des </p>
           <p style={pro}>professionnels </p>
         </div>
       </div>

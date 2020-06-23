@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './turn.js';
-import Toolbar from '../Navigation/Toolbar/Toolbar';
+import ToolbarPresta from '../Navigation/Toolbar/ToolBarPrestas';
 import SideDrawer from '../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../Navigation/BackDrop/BackDrop';
 import FooterPresta from '../Prestations/FooterPresta/FooterPresta';
@@ -40,7 +40,7 @@ export default function Magazine() {
     <Layout>
       <div className={classes.white}></div>
       <div className={classes.nav_magazine_not_mobile}>
-        <Toolbar drawerClickHandler={drawerToggleClickHandler} />
+        <ToolbarPresta drawerClickHandler={drawerToggleClickHandler} />
         <SideDrawer show={state.sideDrawerOpen} />
       </div>
       <div className={classes.nav_magazine_mobile}>

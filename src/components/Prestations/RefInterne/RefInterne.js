@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import ToolbarPresta from '../../Navigation/Toolbar/ToolBarPrestas';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../../Navigation/BackDrop/BackDrop';
 import Footer from '../FooterPresta/FooterPresta';
@@ -36,7 +36,10 @@ class Prestations extends Component {
     return (
       <Layout>
         <div className={classes.white}></div>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} height="" />
+        <ToolbarPresta
+          drawerClickHandler={this.drawerToggleClickHandler}
+          height=""
+        />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <div className={classes.container}>
@@ -44,13 +47,13 @@ class Prestations extends Component {
             <h1 className={classes.presta_title}>RÉFÉRENCEMENT INTERNE</h1>
             <p className={classes.presta_text}>
               Notre équipe réalise des campagnes de référencement numériques
-              professionnelles. L’édition de nos revues professionnelles est
-              disponible sous formats numérique et papier. Nos revues sont
+              professionnelles. Les éditions de nos revues professionnelles sont
+              disponibles sous formats numérique et papier. Nos revues sont
               spécialisées dans les domaines techniques comportants plusieurs
               catégories en fonction des secteurs d’activités. <br /> <p />
               Découvrez nos nouveaux outils de référencement interne qui
-              permettent aux entreprises (multinationales, pmi, pme) de
-              bénéficier d’informations indispensables et d’actualité sur leur
+              permettent aux entreprises (multinationales, PMI, PME) de
+              bénéficier d’informations indispensables et d’actualités sur leur
               cœur de métier. Ces outils vous permettrons d’accroître votre
               visibilité et ainsi développer de nouveaux clients ciblés. <br />{' '}
               <p />

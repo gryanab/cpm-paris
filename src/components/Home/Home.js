@@ -18,11 +18,11 @@ import classes from './Home.module.css';
 
 class Home extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -48,14 +48,14 @@ class Home extends Component {
         <div className={classes.white}></div>
         <Sigles />
         <NotreAgence
-          ref={NotreAgence => {
+          ref={(NotreAgence) => {
             this.NotreAgence = NotreAgence;
           }}
         />
         <Prestations />
         <ScrollableMenu />
         <Form />
-        <Footer />
+        <Footer style={{ zIndex: '4' }} />
       </Layout>
     );
   }

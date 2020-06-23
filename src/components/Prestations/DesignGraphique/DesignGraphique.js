@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import ToolbarPresta from '../../Navigation/Toolbar/ToolBarPrestas';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../../Navigation/BackDrop/BackDrop';
-import Footer from '../../Home/Footer/Footer';
 import DesignGraphique from '../../../assets/images/prestations/design-graphique.png';
 import DesignGraphiquePic from '../../../assets/images/prestations/design_graphique_pic.jpg';
 
@@ -14,11 +13,11 @@ import FooterPresta from '../FooterPresta/FooterPresta';
 
 class Prestations extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -35,7 +34,10 @@ class Prestations extends Component {
     return (
       <Layout>
         <div className={classes.white}></div>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} height="" />
+        <ToolbarPresta
+          drawerClickHandler={this.drawerToggleClickHandler}
+          height=""
+        />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <div className={classes.container}>
@@ -46,7 +48,7 @@ class Prestations extends Component {
               marketing, la publicité, l’édition, la presse et la communication
               d’entreprise. <br /> <p />
               Création et élaboration de supports publicitaires personnalisés.
-              Nous créons des logotypes, cartes de visite, flyers, brochures,
+              Nous créons des logo-types, cartes de visite, flyers, brochures et
               plaquettes. Notre équipe de graphistes qualifiés met tout son
               savoir-faire ainsi que sa créativité en avant, pour véhiculer un
               message clair et direct. Cela permet de concevoir une
@@ -54,7 +56,7 @@ class Prestations extends Component {
               votre image de marque. <br /> <p />
               De plus, nos graphistes sont présents pour vous aiguiller dans vos
               choix de communication si vous n’avez aucune idée concernant vos
-              types de supports à produire.
+              types de médias à produire.
             </p>
           </div>
           <img className={classes.img_presta} src={DesignGraphique} />

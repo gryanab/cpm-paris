@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import ToolbarPresta from '../../Navigation/Toolbar/ToolBarPrestas';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../../Navigation/BackDrop/BackDrop';
 import ConseilComm from '../../../assets/images/prestations/conseil-com.png';
@@ -13,11 +13,11 @@ import FooterPresta from '../FooterPresta/FooterPresta';
 
 class Prestations extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -34,7 +34,10 @@ class Prestations extends Component {
     return (
       <Layout>
         <div className={classes.white}></div>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} height="" />
+        <ToolbarPresta
+          drawerClickHandler={this.drawerToggleClickHandler}
+          height=""
+        />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <div className={classes.container}>

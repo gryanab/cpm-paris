@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import ToolbarPresta from '../../Navigation/Toolbar/ToolBarPrestas';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../../Navigation/BackDrop/BackDrop';
-import Footer from '../../Home/Footer/Footer';
 import Formation from '../../../assets/images/prestations/formation.png';
 import FormationPic from '../../../assets/images/prestations/formation_pic.jpg';
 
@@ -14,11 +13,11 @@ import FooterPresta from '../FooterPresta/FooterPresta';
 
 class FormationComp extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -35,7 +34,10 @@ class FormationComp extends Component {
     return (
       <Layout>
         <div className={classes.white}></div>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} height="" />
+        <ToolbarPresta
+          drawerClickHandler={this.drawerToggleClickHandler}
+          height=""
+        />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <div className={classes.container}>
@@ -47,6 +49,10 @@ class FormationComp extends Component {
               de meilleurs résultats. Fort de notre expérience de plus de 25 ans
               dans le domaine des métiers de la communication et des médias,
               nous mettons à votre disposition nos compétences afin de vous
+              accompagner et de vous aiguiller dans votre projet professionnel.
+              Notre équipe de formateur se tient à votre service pour vous aider
+              à développer vos compétences professionelles et relationnelles.
+              Alors n'attendez plus et rejoignez-nous.
             </p>
           </div>
           <img className={classes.img_presta} src={Formation} />

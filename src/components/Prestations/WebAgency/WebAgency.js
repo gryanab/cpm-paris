@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Toolbar from '../../Navigation/Toolbar/Toolbar';
+import ToolbarPresta from '../../Navigation/Toolbar/ToolBarPrestas';
 import SideDrawer from '../../Navigation/SideDrawer/SideDrawder';
 import BackDrop from '../../Navigation/BackDrop/BackDrop';
 import Footer from '../FooterPresta/FooterPresta';
@@ -13,11 +13,11 @@ import classes from '../Prestations.module.css';
 
 class Prestations extends Component {
   state = {
-    sideDrawerOpen: false
+    sideDrawerOpen: false,
   };
 
   drawerToggleClickHandler = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -34,7 +34,10 @@ class Prestations extends Component {
     return (
       <Layout>
         <div className={classes.white}></div>
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} height="" />
+        <ToolbarPresta
+          drawerClickHandler={this.drawerToggleClickHandler}
+          height=""
+        />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backDrop}
         <div className={classes.container}>
@@ -44,10 +47,10 @@ class Prestations extends Component {
               Nous vous assistons de la conception à la gestion en passant par
               la réalisation de vos outils de communication internet et
               intranet. Notre agence web est capable de répondre à tous vos
-              besoins en terme d’élaboration d’une véritable stratégie digitale.{' '}
-              <br /> <p />
+              besoins en terme d’élaboration d’une véritable stratégie
+              numérique. <br /> <p />
               Nous vous accompagnons également pour la création et la gestion de
-              site web design, le référencement google, et les conseils
+              site web design, le référencement Google et les conseils
               marketing. Nous créons sur le long terme votre propre site
               actualisé et visible sur les moteurs de recherche. <br /> <p />
               Nous vous conseillons pour définir une stratégie digitale qui soit
