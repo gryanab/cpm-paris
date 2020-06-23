@@ -20,7 +20,7 @@ const sigle = () => (
         <p className={classes.title}>UN DOMAINE MAÎTRISÉ</p>
         <p className={classes.text}>
           CPM s'est spécialisé dans <br /> les ouvrages techniques <br />{' '}
-          professionnels <br /> tel que Référence <br /> Énergie, Contact CE...
+          professionnels <br /> tel que Référence <br /> Énergie, Contact CSE...
         </p>
       </div>
       <div className={classes.sigle_3}>

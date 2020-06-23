@@ -8,6 +8,14 @@
   box-shadow: 0px -120px 60px 100px white;
 }
 
+.phone {
+  position: absolute;
+  margin-top: 650px;
+  width: 300px;
+  z-index: 1;
+  color: rgb(39, 39, 39);
+}
+
 @media (min-width: 1920px) {
   .white {
     height: 2500px;

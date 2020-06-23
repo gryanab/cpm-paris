@@ -43,7 +43,7 @@ const nosPrestations = () => (
           par la réalisation <br /> de vos outils de communications internet,{' '}
           <br /> intranet. Notre agence web est capable <br />
           de répondre à tous vos besoins et <br /> d'élaborer une véritable
-          stratégie digitale.
+          stratégie numérique.
         </p>
       </div>
       <div className={classes.three}>

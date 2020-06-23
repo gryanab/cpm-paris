@@ -1,6 +1,11 @@
 form {
   margin-top: 10%;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(45, 45, 45);
+  background-image: url('../../../assets/images/contact/cpmparis_site_fond_contact.png');
+  background-position-x: 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
   width: 100%;
   border: none;
   height: 700px;
@@ -31,7 +36,13 @@ form {
   width: 30%;
   margin: 0;
   display: inline-block;
-  align-self: center;
+  align-self: top;
+}
+
+.phone {
+  position: absolute;
+  width: 350px;
+  margin-top: 300px;
 }
 
 #fs-frm-inputs {
@@ -84,7 +95,7 @@ textarea {
   background-color: rgb(210, 210, 210);
   width: 23%;
   height: 25px;
-  color: rgb(39, 39, 39);
+  color: rgb(45, 45, 45);
 }
 
 input:focus,
@@ -107,14 +118,14 @@ textarea::placeholder {
   width: 45%;
   margin-right: 1em;
   height: 28px;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(45, 45, 45);
   border: 1px solid rgb(210, 210, 210);
 }
 
 #first-name {
   width: 45%;
   height: 28px;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(45, 45, 45);
   border: 1px solid rgb(210, 210, 210);
 }
 
@@ -125,7 +136,7 @@ textarea::placeholder {
   width: 93.5%;
   margin-top: 1.3em;
   height: 28px;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(45, 45, 45);
   border: 1px solid rgb(210, 210, 210);
 }
 
@@ -133,11 +144,24 @@ textarea::placeholder {
   width: 93%;
   margin-top: 1.3em;
   height: 150px;
-  background-color: rgb(39, 39, 39);
+  background-color: rgb(45, 45, 45);
   border: 1px solid rgb(210, 210, 210);
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
+  form {
+    margin-top: 10%;
+    background-color: rgb(45, 45, 45);
+    background-image: url('../../../assets/images/contact/cpmparis_site_fond_contact.png');
+    background-position-x: 20%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    width: 100%;
+    border: none;
+    height: 700px;
+  }
   #last-name {
     margin-right: 0.8em;
   }
@@ -166,7 +190,7 @@ textarea::placeholder {
 @media only screen and (max-width: 768px) and (min-width: 426px) {
   form {
     margin-top: 1%;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(45, 45, 45);
     width: 100%;
     border: none;
     height: 650px;
@@ -194,6 +218,7 @@ textarea::placeholder {
 @media (max-width: 426px) {
   form {
     height: 650px;
+    background-image: none;
   }
   #last-name {
     margin-right: 0.8em;
@@ -217,14 +242,14 @@ textarea::placeholder {
     text-align: center;
     font-family: 'Avenir Next';
     font-weight: 500;
-    color: rgb(39, 39, 39);
+    color: rgb(45, 45, 45);
     font-size: 1.3em;
     text-transform: uppercase;
     margin-bottom: 2em;
     margin-top: 2em;
   }
   .parag-horaires {
-    color: rgb(39, 39, 39);
+    color: rgb(45, 45, 45);
     margin: 0 auto;
   }
   #submit {

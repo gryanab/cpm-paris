@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Link } from 'react-scroll';
 import classes from './Toolbar.module.css';
 
 import '../SideDrawer/DrawerToggleButton';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import cpmLogoLong from '../../../assets/images/cpm-logo/LogoCPM_Long (1).png';
 import cpmLogo from '../../../assets/images/cpm-logo/cpm-logo.png';
-const toolbar = (props) => (
+const toolbarPrestas = (props) => (
   <header className={classes.toolbar}>
     <nav className={classes.toolbar__navigation}>
       <div className={classes.toolbar__toggle_button}>
@@ -36,37 +35,8 @@ const toolbar = (props) => (
               }}
               to="/"
             >
-              accueil
+              retour
             </NavLink>
-          </li>
-
-          <li>
-            <Link smooth={true} exact to="notreAgence">
-              agence
-            </Link>
-          </li>
-          <li>
-            <Link smooth={true} exact to="nosPrestations">
-              nos prestations
-            </Link>
-          </li>
-          <li>
-            <NavLink
-              activeStyle={{
-                fontWeight: 'bold',
-                color: 'red',
-                textDecoration: 'none',
-              }}
-              exact
-              to="/prestations/ref-interne"
-            >
-              références
-            </NavLink>
-          </li>
-          <li>
-            <Link smooth={true} exact to="contactNav">
-              contact
-            </Link>
           </li>
         </ul>
       </div>
@@ -74,4 +44,4 @@ const toolbar = (props) => (
   </header>
 );
 
-export default toolbar;
+export default toolbarPrestas;
