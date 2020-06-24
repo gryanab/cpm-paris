@@ -47,7 +47,7 @@ class Prestations extends Component {
             <h1 className={classes.presta_title}>RÉFÉRENCEMENT INTERNE</h1>
             <p className={classes.presta_text}>
               Notre équipe réalise des campagnes de référencement numériques
-              professionnelles. Les éditions de nos revues professionnelles sont
+              professionnelles. Les éditions de nos outils de travail sont
               disponibles sous formats numérique et papier. Nos revues sont
               spécialisées dans les domaines techniques comportants plusieurs
               catégories en fonction des secteurs d’activités. <br /> <p />

@@ -80,7 +80,7 @@ const nosPrestations = () => (
         </Link>
         <p className={classes.ref__interne}>FORMATION</p>
         <p className={classes.ref__interne__text}>
-          Nous somme fiers de l'efficacité <br /> de nos méthodes de formation,
+          Nous sommes fiers de l'efficacité <br /> de nos méthodes de formation,
           mais <br /> nous nous efforçons de nous <br /> améliorer pour fournir
           toujours
           <br /> de meilleurs résultats.
