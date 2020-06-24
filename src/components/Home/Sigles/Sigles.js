@@ -13,14 +13,14 @@ const sigle = () => (
           développement des <br /> entreprises que nous accompagnons, <br />{' '}
           nous proposons des produits <br />
           fiables permettant d'accroitre <br /> la notoriété et l'amélioration{' '}
-          <br /> de la visibilité de l'entreprise.
+          <br /> de la visibilité des entreprises.
         </p>
       </div>
       <div className={classes.sigle_2}>
         <p className={classes.title}>UN DOMAINE MAÎTRISÉ</p>
         <p className={classes.text}>
           CPM s'est spécialisé dans <br /> les ouvrages techniques <br />{' '}
-          professionnels <br /> tel que Référence <br /> Énergie, Contact CSE...
+          professionnels <br /> tel que Référence Énergie, Contact CSE...
         </p>
       </div>
       <div className={classes.sigle_3}>
